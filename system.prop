@@ -34,6 +34,14 @@ persist.radio.VT_CAM_INTERFACE=1
 persist.radio.VT_HYBRID_ENABLE=1
 persist.radio.calls.on.ims=1
 
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=1000
+
 # Recovery
 ro.recovery.ui.margin_height=48
 
