@@ -14,6 +14,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Device configs makefiles
 $(call inherit-product, device/xiaomi/sweet/configs/device/telephony.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
