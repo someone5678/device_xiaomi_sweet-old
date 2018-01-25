@@ -44,5 +44,6 @@ media.stagefright.enable-fma2dp=true
 vendor.mm.enable.qcom_parser=16767487
 
 # WFD
+debug.sf.enable_hwc_vds=1
 persist.debug.wfd.enable=1
 vendor.wfdservice64=enable
