@@ -170,12 +170,6 @@ persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-persist.vendor.qti.telephony.vt_cam_interface=2
-
 # Suspend properties
 suspend.short_suspend_threshold_millis=2000
 suspend.short_suspend_backoff_enabled=true
@@ -213,13 +207,6 @@ ro.vendor.audio.soundfx.type=mi
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-
-# Radio
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.data_ltd_sys_ind=1
-persist.vendor.radio.dynamic_sar=1
-persist.vendor.radio.force_ltd_sys_ind=1
-persist.vendor.radio.ucdetect.usb=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true

@@ -78,18 +78,52 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.add_power_save=1 \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
+    persist.vendor.radio.dynamic_sar=1 \
     persist.vendor.radio.enableadvancedscan=true \
+    persist.vendor.radio.force_ltd_sys_ind=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.manual_nw_rej_ct=1 \
     persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.process_sups_ind=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.process_sups_ind=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.report_codec=1 \
-    persist.vendor.radio.sib16_support=1
+    persist.vendor.radio.sib16_support=1 \
+    persist.vendor.radio.ucdetect.usb=true
+
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.calls.on.ims=1
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.NO_STAPA=1 \
+    persist.radio.VT_CAM_INTERFACE=2 \
+    persist.radio.VT_ENABLE=1 \
+    persist.radio.VT_HYBRID_ENABLE=1 \
+
+# RIL Powersaving
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.add_power_save=1 \
+    pm.sleep_mode=1 \
+    ro.ril.disable.power.collapse=0 \
+    ro.ril.fast.dormancy.rule=1 \
+    ro.ril.fast.dormancy.timeout=3 \
+    ro.mot.eri.losalert.delay=1000
+
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=2
+
+# RCS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rcs.supported=1
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
