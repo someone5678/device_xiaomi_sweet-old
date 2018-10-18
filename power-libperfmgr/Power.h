@@ -42,7 +42,6 @@ class Power : public BnPower {
 
   private:
     std::shared_ptr<HintManager> mHintManager;
-    std::atomic<bool> mVRModeOn;
     std::atomic<bool> mSustainedPerfModeOn;
     std::atomic<bool> mReady;
 };

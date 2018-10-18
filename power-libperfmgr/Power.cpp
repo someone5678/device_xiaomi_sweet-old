@@ -53,7 +53,6 @@ constexpr char kPowerHalConfigPath[] = "/vendor/etc/powerhint.json";
 
 Power::Power()
     : mHintManager(nullptr),
-      mVRModeOn(false),
       mSustainedPerfModeOn(false),
       mReady(false) {
     // Parse config but do not start the looper
@@ -71,15 +70,6 @@ Power::Power()
             ALOGI("Initialize with SUSTAINED_PERFORMANCE on");
             mHintManager->DoHint("SUSTAINED_PERFORMANCE");
             mSustainedPerfModeOn = true;
-        } else if (state == "VR") {
-            ALOGI("Initialize with VR on");
-            mHintManager->DoHint(state);
-            mVRModeOn = true;
-        } else if (state == "VR_SUSTAINED_PERFORMANCE") {
-            ALOGI("Initialize with SUSTAINED_PERFORMANCE and VR on");
-            mHintManager->DoHint("VR_SUSTAINED_PERFORMANCE");
-            mSustainedPerfModeOn = true;
-            mVRModeOn = true;
         } else {
             ALOGI("Initialize PowerHAL");
         }
@@ -107,40 +97,10 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::LOW_POWER:
             break;
         case Mode::SUSTAINED_PERFORMANCE:
-            if (enabled && !mSustainedPerfModeOn) {
-                if (!mVRModeOn) {  // Sustained mode only.
-                    mHintManager->DoHint("SUSTAINED_PERFORMANCE");
-                } else {  // Sustained + VR mode.
-                    mHintManager->EndHint("VR");
-                    mHintManager->DoHint("VR_SUSTAINED_PERFORMANCE");
-                }
-                mSustainedPerfModeOn = true;
-            } else if (!enabled && mSustainedPerfModeOn) {
-                mHintManager->EndHint("VR_SUSTAINED_PERFORMANCE");
-                mHintManager->EndHint("SUSTAINED_PERFORMANCE");
-                if (mVRModeOn) {  // Switch back to VR Mode.
-                    mHintManager->DoHint("VR");
-                }
-                mSustainedPerfModeOn = false;
+            if (enabled) {
+                mHintManager->DoHint("SUSTAINED_PERFORMANCE");
             }
-            break;
-        case Mode::VR:
-            if (enabled && !mVRModeOn) {
-                if (!mSustainedPerfModeOn) {  // VR mode only.
-                    mHintManager->DoHint("VR");
-                } else {  // Sustained + VR mode.
-                    mHintManager->EndHint("SUSTAINED_PERFORMANCE");
-                    mHintManager->DoHint("VR_SUSTAINED_PERFORMANCE");
-                }
-                mVRModeOn = true;
-            } else if (!enabled && mVRModeOn) {
-                mHintManager->EndHint("VR_SUSTAINED_PERFORMANCE");
-                mHintManager->EndHint("VR");
-                if (mSustainedPerfModeOn) {  // Switch back to sustained Mode.
-                    mHintManager->DoHint("SUSTAINED_PERFORMANCE");
-                }
-                mVRModeOn = false;
-            }
+            mSustainedPerfModeOn = true;
             break;
         case Mode::DOUBLE_TAP_TO_WAKE: {
             int fd = open(TOUCH_DEV_PATH, O_RDWR);
@@ -149,7 +109,7 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             break;
         }
         case Mode::LAUNCH:
-            if (mVRModeOn || mSustainedPerfModeOn) {
+            if (mSustainedPerfModeOn) {
                 break;
             }
             [[fallthrough]];
