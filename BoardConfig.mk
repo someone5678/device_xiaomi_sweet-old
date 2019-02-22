@@ -21,6 +21,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
