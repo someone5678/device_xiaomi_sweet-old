@@ -11,6 +11,8 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Bluetooth
+persist.bluetooth.bqr.event_mask=14
+persist.bluetooth.bqr.min_interval_ms=500
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Dalvik
