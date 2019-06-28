@@ -331,6 +331,15 @@ on charger
     setprop persist.sys.usb.config mass_storage
     start health-hal-2-1
 
+    setprop vendor.setup.power 1
+
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
+
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
