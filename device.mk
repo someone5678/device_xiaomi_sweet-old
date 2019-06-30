@@ -359,7 +359,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    Doze
 
 # Perf
 PRODUCT_PACKAGES += \
