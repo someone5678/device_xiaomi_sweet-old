@@ -272,6 +272,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     qti_whitelist.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qmi/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
