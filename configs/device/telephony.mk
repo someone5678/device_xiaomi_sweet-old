@@ -76,8 +76,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.force_ltd_sys_ind=1 \
     persist.vendor.radio.manual_nw_rej_ct=1 \
     persist.vendor.radio.mt_sms_ack=30 \
+    persist.vendor.radio.ucdetect.usb=true \
     persist.vendor.radio.report_codec=1 \
-    persist.vendor.radio.ucdetect.usb=true
+    persist.vendor.radio.vdp_on_ims_cap=1
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
