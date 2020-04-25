@@ -1,3 +1,7 @@
+# dex2oat64
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
 # Volume steps
 ro.config.media_vol_steps=100
 
