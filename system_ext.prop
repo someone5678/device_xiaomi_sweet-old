@@ -5,6 +5,7 @@ persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.bluetooth.ble_drop_power=true
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.btsatck.absvolfeature=true
