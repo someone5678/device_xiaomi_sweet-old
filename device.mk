@@ -587,3 +587,5 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-syste
 include vendor/xiaomi/sweet/sweet-vendor.mk
 include vendor/dolby/config.mk
 include vendor/pixel-additional/config.mk
+include build/make/target/product/iorap_large_memory_config.mk
+
