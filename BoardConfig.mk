@@ -72,6 +72,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.14
 
+# Allow LZ4 compression
+BOARD_RAMDISK_USE_LZ4 := true
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
