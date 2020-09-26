@@ -242,6 +242,7 @@ ro.apex.updatable=true
 persist.radio.multisim.config=dsds
 ro.opengles.version=196610
 persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.mt_sms_ack=30
 camera.disable_zsl_mode=1
 wifi.aware.interface=wifi-aware0
 ro.crypto.volume.filenames_mode=aes-256-cts
