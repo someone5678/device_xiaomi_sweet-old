@@ -10,5 +10,11 @@
     "repository": "ArrowOS-Devices/android_kernel_xiaomi_sweet",
     "target_path": "kernel/xiaomi/sweet",
     "branch": "arrow-12.0"
+  },
+  {
+    "remote": "github",
+    "repository": "ProtonAOSP/android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService",
+    "branch": "sc"
   }
 ]
