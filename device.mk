@@ -577,6 +577,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui-shim
 
+# Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
+# on supported devices with Deep Press input classifier HALs and models
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.input.video_enabled=false
+
 # QTI Bluetooth
 -include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
