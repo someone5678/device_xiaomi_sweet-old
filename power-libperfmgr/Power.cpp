@@ -48,7 +48,6 @@ namespace impl {
 namespace pixel {
 
 constexpr char kPowerHalStateProp[] = "vendor.powerhal.state";
-constexpr char kPowerHalAudioProp[] = "vendor.powerhal.audio";
 constexpr char kPowerHalInitProp[] = "vendor.powerhal.init";
 constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 constexpr char kPowerHalConfigPath[] = "/vendor/etc/powerhint.json";
@@ -84,12 +83,6 @@ Power::Power()
             mVRModeOn = true;
         } else {
             ALOGI("Initialize PowerHAL");
-        }
-
-        state = ::android::base::GetProperty(kPowerHalAudioProp, "");
-        if (state == "AUDIO_STREAMING_LOW_LATENCY") {
-            ALOGI("Initialize with AUDIO_LOW_LATENCY on");
-            mHintManager->DoHint(state);
         }
 
         state = ::android::base::GetProperty(kPowerHalRenderingProp, "");
@@ -171,8 +164,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             [[fallthrough]];
         case Mode::DISPLAY_INACTIVE:
             [[fallthrough]];
-        case Mode::AUDIO_STREAMING_LOW_LATENCY:
-            [[fallthrough]];
         case Mode::CAMERA_STREAMING_SECURE:
             [[fallthrough]];
         case Mode::CAMERA_STREAMING_LOW:
@@ -220,7 +211,6 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
         case Boost::INTERACTION:
         case Boost::DISPLAY_UPDATE_IMMINENT:
         case Boost::ML_ACC:
-        case Boost::AUDIO_LAUNCH:
         case Boost::CAMERA_LAUNCH:
         case Boost::CAMERA_SHOT:
             [[fallthrough]];
