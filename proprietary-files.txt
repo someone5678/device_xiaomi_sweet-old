@@ -896,7 +896,6 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/libssccalapi.so
-vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.so
 
 # Sensor calibrate
@@ -1049,6 +1048,10 @@ vendor/lib64/libqcodec2.so
 
 # Media (libsdedrm) - From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+
+# Sensors - from PL2_sprout-user 10 QKQ1.190828.002 00WW_4_150
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
 # Soundtrigger - from sunfish-user-12-SQ1A.220105.002-7961164-release-keys
 vendor/lib64/hw/sound_trigger.primary.sm6150.so|18886433c30b32f99dcddb5c6c3bd1a1e03dfb48
