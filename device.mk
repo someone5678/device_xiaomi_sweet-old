@@ -467,6 +467,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8150-common/media/conf_files/sm6150/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
 
+# Transcoding related property.
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.transcoding.codec_max_operating_rate_720P=480 \
+    debug.media.transcoding.codec_max_operating_rate_1080P=240 \
+    debug.media.transcoding.codec_max_operating_rate_4k=120
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
