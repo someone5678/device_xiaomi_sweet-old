@@ -40,8 +40,8 @@ on property:vendor.post_boot.parsed=1
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-5,7
-    write /dev/cpuset/background/cpus 2-5
-    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/background/cpus 4-5
+    write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
 
     # Configure CPU frequencies
@@ -77,7 +77,7 @@ on property:vendor.post_boot.parsed=1
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 1
+    write /dev/stune/top-app/schedtune.boost 5
 
     # Setup dynamic stune boost
     write /sys/module/cpu_boost/parameters/dynamic_stune_boost 15
