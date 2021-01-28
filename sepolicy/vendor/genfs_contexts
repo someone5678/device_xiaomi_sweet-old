@@ -12,6 +12,11 @@ genfscon sysfs /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crt
 # Haptic
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel                  u:object_r:sysfs_vibrator:s0
 
+# XiaomiParts (Sound-Control nodes)
+genfscon sysfs /kernel/sound_control/headphone_gain                u:object_r:sysfs_gain:s0
+genfscon sysfs /kernel/sound_control/mic_gain                      u:object_r:sysfs_gain:s0
+genfscon sysfs /kernel/sound_control/speaker_gain                  u:object_r:sysfs_gain:s0
+
 # Fast Charge Mode Node
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qpnp,qg/power_supply/bms/fastcharge_mode  u:object_r:sysfs_fastcharge_mode:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/usb/fastcharge_mode u:object_r:sysfs_fastcharge_mode:s0
