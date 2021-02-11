@@ -30,6 +30,9 @@ persist.vendor.camera.facepp.fdenable=0
 # Charger
 ro.charger.enable_suspend=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
