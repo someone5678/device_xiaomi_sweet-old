@@ -139,7 +139,6 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/dynamic_fps
     chmod 0444 /sys/class/drm/card0-DSI-1/dynamic_fps
     start rmt_storage
-    start rfs_access
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/foreground/cpus 0-3
     write /dev/cpuset/foreground/boost/cpus 0-3
