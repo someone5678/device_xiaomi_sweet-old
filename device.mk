@@ -17,6 +17,9 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Device configs makefiles
 $(call inherit-product, device/xiaomi/sweet/configs/device/telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/configs/device/refreshrate.mk)
