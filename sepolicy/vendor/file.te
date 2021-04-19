@@ -8,6 +8,7 @@ type public_adsprpcd_file, file_type;
 type persist_file, file_type;
 
 # socket
+type audio_socket, file_type;
 type pps_socket, file_type;
 
 # sysfs
