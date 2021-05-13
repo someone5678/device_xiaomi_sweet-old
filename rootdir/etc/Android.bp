@@ -32,3 +32,10 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true
 }
+
+prebuilt_etc {
+    name: "init.sm6150.perf.rc",
+    src: "init.sm6150.perf.rc",
+    sub_dir: "init",
+    soc_specific: true
+}

@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.sm6150.perf.rc \
     init.sweet.rc \
     init.target.rc
 
