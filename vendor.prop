@@ -124,6 +124,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
+vendor.display.disable_metadata_dynamic_fps=1
 debug.sdm.support_writeback=0
 renderthread.skia.reduceopstasksplitting=true
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
