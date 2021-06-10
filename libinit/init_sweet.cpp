@@ -73,6 +73,7 @@ void vendor_load_properties() {
     const std::string mod_device = is_global ? "sweet_eea_global" : "sweetin_in_global";
 
     property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.flash.locked", "1");
 
     for (int i = 0; i <= 1; i++) {
         full_property_override("model", is_global ? "M2101K6G" :
