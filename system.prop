@@ -23,6 +23,9 @@ persist.vendor.camera.facepp.fdenable=0
 # Charger
 ro.charger.enable_suspend=true
 
+# Zygote
+persist.device_config.runtime_native.usap_pool_enabled=true
+
 # One handed mode
 ro.support_one_handed_mode=true
 
