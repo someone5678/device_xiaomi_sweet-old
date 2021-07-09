@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     adaptivecharging.xml
 
+# Google Photos
+PRODUCT_PACKAGES += \
+    pixel_2016_exclusive.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend

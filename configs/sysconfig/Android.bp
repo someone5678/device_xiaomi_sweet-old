@@ -4,3 +4,11 @@ prebuilt_etc {
     src: "adaptivecharging.xml",
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "pixel_2016_exclusive.xml",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "pixel_2016_exclusive.xml",
+    filename_from_src: true,
+}
