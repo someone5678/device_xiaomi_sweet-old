@@ -44,6 +44,9 @@
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
+    <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
+    <integer translatable="false" name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+
     <!-- Array indicating wifi fatal firmware alert error code list from driver -->
     <array translatable="false" name="config_wifi_fatal_firmware_alert_error_code_list">
         <item>1</item>      <!-- WLAN_LOG_REASON_ROAM_FAIL -->
