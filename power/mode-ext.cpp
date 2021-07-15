@@ -44,6 +44,8 @@ extern "C" {
 #include "power-common.h"
 #include "utils.h"
 
+#define GPU_MIN_PWRLEVEL_NODE "/sys/class/kgsl/kgsl-3d0/min_pwrlevel"
+
 // defines from drivers/input/touchscreen/xiaomi/xiaomi_touch.h
 #define SET_CUR_VALUE 0
 #define Touch_Doubletap_Mode 14
@@ -91,11 +93,14 @@ namespace hardware {
 namespace power {
 namespace impl {
 
+using ::android::base::WriteStringToFile;
+
 bool isDeviceSpecificModeSupported(Mode type, bool *_aidl_return) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE:
             *_aidl_return = true;
             return true;
+        case Mode::EXPENSIVE_RENDERING:
         case Mode::LAUNCH:
             *_aidl_return = true;
             return true;
@@ -113,6 +118,9 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
             close(fd);
             return true;
         }
+        case Mode::EXPENSIVE_RENDERING:
+            WriteStringToFile(enabled ? "0" : "6", GPU_MIN_PWRLEVEL_NODE, true);
+            return true;
         case Mode::LAUNCH:
             process_activity_launch_hint(&enabled);
             return true;
