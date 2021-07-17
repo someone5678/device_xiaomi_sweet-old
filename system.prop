@@ -13,6 +13,12 @@ persist.dbg.wfc_avail_ovr=1
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
 
+# Dalvik
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=0
