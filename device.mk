@@ -267,7 +267,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/qcom/opensource/data-ipa-cfg-mgr
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -287,6 +289,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service \
     android.hardware.power-service.rc \
@@ -470,10 +473,6 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     Doze
-
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
