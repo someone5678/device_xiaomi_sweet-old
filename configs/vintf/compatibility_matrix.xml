@@ -539,14 +539,6 @@
             <instance>TouchCompanionService</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.iop</name>
-        <version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.mwqemadapter</name>
         <transport>hwbinder</transport>
@@ -554,14 +546,6 @@
         <interface>
             <name>IMwqemAdapter</name>
             <instance>MwqemAdapter</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.perf</name>
-        <version>2.0-2</version>
-        <interface>
-            <name>IPerf</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
