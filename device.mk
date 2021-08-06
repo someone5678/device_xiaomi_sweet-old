@@ -686,6 +686,10 @@ $(call inherit-product-if-exists, vendor/dolby/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 include build/make/target/product/iorap_large_memory_config.mk
 
+# HotwordEnrollement
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
 # Next Genration Asistant
 PRODUCT_PACKAGES += \
     NgaResources
