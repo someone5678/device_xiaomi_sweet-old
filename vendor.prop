@@ -174,6 +174,7 @@ debug.hwui.target_cpu_time_percent=30
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+persist.vendor.qti.telephony.vt_cam_interface=2
 
 # Suspend properties
 suspend.short_suspend_threshold_millis=2000
