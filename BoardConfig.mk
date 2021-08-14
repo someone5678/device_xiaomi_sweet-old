@@ -32,7 +32,8 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         service_locator.enable=1 \
                         swiotlb=1 \
                         androidboot.usbcontroller=a600000.dwc3 \
-                        kpti=off
+                        kpti=off \
+                        androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
