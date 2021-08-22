@@ -625,7 +625,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.input.video_enabled=false
 
 # Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 # QTI Bluetooth
