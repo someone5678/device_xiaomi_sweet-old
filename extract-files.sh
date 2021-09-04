@@ -89,6 +89,9 @@ function blob_fixup() {
         $PATCHELF_TOOL --remove-needed "libmegface.so" "${2}"
         $PATCHELF_TOOL --add-needed "libshim_megvii.so" "${2}"
         ;;
+    vendor/bin/mi_thermald)
+        sed -i "s|ug_cpu|ug_uwu|g" "${2}"
+        ;;
     system_ext/lib64/lib-imsvideocodec.so)
         $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
     esac
