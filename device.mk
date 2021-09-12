@@ -168,7 +168,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.insmod.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sh
 
 PRODUCT_COPY_FILES += \
