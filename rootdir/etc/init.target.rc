@@ -52,6 +52,11 @@ on init
     chmod 0660 /dev/drv8846_dev
     chmod 0660 /dev/akm09970
 
+    chmod 0664 /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/sconfig
+    chmod 0666 /sys/class/thermal/thermal_message/temp_state
+    chown system system /sys/class/thermal/thermal_message/temp_state
+
 on fs
     chown system system /sys/class/hphlr_impedance/hphl
     chown system system /sys/class/hphlr_impedance/hphr
@@ -99,10 +104,6 @@ on boot
     # Touch funtions permissions setting
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chmod 0664 /sys/class/touch/touch_dev/palm_sensor
-
-    # Set thermal mode to evaluation
-    chown system system /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
 
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
