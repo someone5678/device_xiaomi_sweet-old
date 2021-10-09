@@ -109,5 +109,8 @@
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_fa=false</item>
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_min_training_interval=false</item>
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_non_synthetic_logs=false</item>
+
+        <!-- Keep up to 7 days of permission usage history -->
+        <item>privacy/discrete_history_cutoff_millis=604800000</item>
     </string-array>
 </resources>
