@@ -267,6 +267,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/qcom-caf/wlan \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
     vendor/xiaomi-firmware \
     hardware/google/interfaces \
@@ -621,6 +622,10 @@ PRODUCT_PACKAGES += \
 # on supported devices with Deep Press input classifier HALs and models
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.input.video_enabled=false
+
+# Wlan
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
