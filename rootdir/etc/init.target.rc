@@ -90,7 +90,6 @@ service mi_thermald /system/vendor/bin/mi_thermald
     class core
     user root
     group system
-    seclabel u:r:mi_thermald:s0
 
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
