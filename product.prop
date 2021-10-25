@@ -1,2 +1,2 @@
 # IORAP
-ro.iorapd.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
