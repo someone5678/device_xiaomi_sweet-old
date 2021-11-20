@@ -390,6 +390,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Qualcomm Fwk-detect
+PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti
+
 # GPS
 PRODUCT_PACKAGES += \
      android.hardware.gnss@2.1-impl-qti \
