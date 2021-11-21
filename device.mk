@@ -396,6 +396,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # Qualcomm Fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti
