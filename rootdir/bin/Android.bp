@@ -1,10 +1,4 @@
 sh_binary {
-    name: "init.qcom.early_boot.sh",
-    src: "init.qcom.early_boot.sh",
-    soc_specific: true
-}
-
-sh_binary {
     name: "init.qcom.post_boot.sh",
     src: "init.qcom.post_boot.sh",
     soc_specific: true
