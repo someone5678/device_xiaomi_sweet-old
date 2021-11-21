@@ -721,7 +721,6 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/carwatchdog_aidl_interface-V2-ndk_platform.so
-vendor/lib64/com.dsi.ant@1.0.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
@@ -750,7 +749,6 @@ vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.primary.sm6150.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so
@@ -1332,7 +1330,6 @@ vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/carwatchdog_aidl_interface-V2-ndk_platform.so
-vendor/lib/com.dsi.ant@1.0.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
@@ -1360,7 +1357,6 @@ vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/camera.qcom.so
-vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/consumerir.default.so

@@ -216,6 +216,11 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/data-ipa-cfg-mgr
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant@1.0.vendor
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
