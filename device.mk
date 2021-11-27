@@ -446,6 +446,8 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.impl \
+    vendor.qti.hardware.vibrator.service \
     android.hardware.vibrator-V1-ndk_platform.vendor
 
 # VINTF
