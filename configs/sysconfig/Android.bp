@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "adaptivecharging.xml",
+    sub_dir: "sysconfig",
+    src: "adaptivecharging.xml",
+    filename_from_src: true,
+}

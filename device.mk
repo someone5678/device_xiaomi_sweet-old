@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc
 
+# Adaptive charging
+PRODUCT_PACKAGES += \
+    adaptivecharging.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
