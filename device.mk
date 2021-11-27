@@ -65,6 +65,8 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
     android.hidl.allocator@1.0 \
+    libhwbinder \
+    libhwbinder.vendor \
     libhidlbase \
     libhidlbase.vendor
 
