@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     libhidlbase \
     libhidlbase.vendor
 
+# LibNativeHelper
+PRODUCT_HOST_PACKAGES += \
+	libnativehelper
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
