@@ -1,0 +1,28 @@
+From e5f7855a930ae8b3a5bbc709aaa7c45fe9b76bfe Mon Sep 17 00:00:00 2001
+From: someone5678 <nemui3353@gmail.com>
+Date: Sat, 20 Nov 2021 12:10:50 +0900
+Subject: [PATCH] build_soong-ccache-patch
+
+Change-Id: I087db9e37ecb161b365486bbfb85d0b125305f3f
+---
+ ui/build/sandbox_linux.go | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/ui/build/sandbox_linux.go b/ui/build/sandbox_linux.go
+index dab0e75..bc04b11 100644
+--- a/ui/build/sandbox_linux.go
++++ b/ui/build/sandbox_linux.go
+@@ -213,6 +213,10 @@ func (c *Cmd) wrapSandbox() {
+ 		sandboxArgs = append(sandboxArgs, "-N")
+ 	}
+ 
++	if ccacheDir := os.Getenv("CCACHE_DIR"); ccacheDir != "" {
++		sandboxArgs = append(sandboxArgs, "-B", ccacheDir)
++	}
++
+ 	// Stop nsjail from parsing arguments
+ 	sandboxArgs = append(sandboxArgs, "--")
+ 
+-- 
+2.32.0
+

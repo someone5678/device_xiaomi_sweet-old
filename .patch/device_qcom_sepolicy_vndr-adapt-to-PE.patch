@@ -1,0 +1,22 @@
+From 7cac828cfe1fb22e9ea89c383f0f88fb0ff0d75c Mon Sep 17 00:00:00 2001
+From: someone5678 <nemui3353@gmail.com>
+Date: Wed, 10 Nov 2021 01:19:22 +0900
+Subject: [PATCH] device_qcom_sepolicy_vndr-adapt-to-PE
+
+---
+ SEPolicy.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/SEPolicy.mk b/SEPolicy.mk
+index fc2134ae..3ae21dd0 100755
+--- a/SEPolicy.mk
++++ b/SEPolicy.mk
+@@ -76,4 +76,4 @@ ifneq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
+     endif
+ endif
+ 
+--include device/arrow/sepolicy/qcom/sepolicy.mk
++-include device/custom/sepolicy/qcom/sepolicy.mk
+-- 
+2.32.0
+
