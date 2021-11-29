@@ -3,3 +3,6 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Graphics
 debug.cpurend.vsync=false
+
+# GBoard
+ro.com.google.ime.height_ratio=1.2
