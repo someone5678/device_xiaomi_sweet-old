@@ -1887,6 +1887,10 @@ vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 # PowerOffAlarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
+# Graphics (VulkanAPI Layers) From Google Pixel 4 XL coral-user 12 SP1A.211105.002 7743617 release-keys
+-vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
+-vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
+
 # HotWord Enrollment - from oneplus8pro qssi-user-11-RP1A.201005.001 2107082312 release-keys 
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|aca670c20dfee58a96a471b64ea7d63a0a3fb812
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|59192e638ea3b13ee9005d730ce269db66a4d10a
