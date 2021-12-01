@@ -9,4 +9,4 @@ git apply --directory='build/soong' device/xiaomi/sweet/.patch/build_soong-ccach
 
 # PixelPropsUtils Dialer whitelisting
 cd frameworks/base && git reset --hard && cd ../../
-git apply --directory='frameworks/base' device/xiaomi/sweet/.patch/frameworks_base-PixelPropsUtils-whitelist-dialer.patch
+git apply --directory='frameworks/base' device/xiaomi/sweet/.patch/frameworks_base-PixelPropsUtils.patch

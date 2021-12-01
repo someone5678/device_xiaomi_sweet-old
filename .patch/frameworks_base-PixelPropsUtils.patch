@@ -1,7 +1,7 @@
 From df065fd4db6e191458b16af214f7fc2893b4a7fd Mon Sep 17 00:00:00 2001
 From: someone5678 <nemui3353@gmail.com>
 Date: Sun, 28 Nov 2021 12:17:08 +0900
-Subject: [PATCH] frameworks_base-PixelPropsUtils-whitelist-dialer
+Subject: [PATCH] frameworks_base-PixelPropsUtils
 
 Change-Id: If12354cc265c4ac52df461e0b3ef9b55c9a89a34
 ---
