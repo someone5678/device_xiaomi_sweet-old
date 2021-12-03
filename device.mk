@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libvolumelistener \
+    libaudiopreprocessing \
     audio.r_submix.default \
     android.hardware.audio.service \
     android.hardware.audio.common-util \
