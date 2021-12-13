@@ -1911,3 +1911,12 @@ vendor/etc/chre/ambient.so
 vendor/etc/chre/ambient_micro.napp_header
 vendor/etc/chre/ambient_micro.so
 -product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+
+# Gesture - from google/sunfish/sunfish:12/SPB5.210812.002/7671067:user/release-keys
+vendor/etc/chre/columbus.napp_header
+vendor/etc/chre/columbus.so
+vendor/etc/chre/columbus_lite.napp_header
+vendor/etc/chre/columbus_lite.so
+vendor/etc/chre/gesture.napp_header
+vendor/etc/chre/gesture.so
+vendor/etc/chre/preloaded_nanoapps.json
