@@ -317,6 +317,58 @@
         <param client_capture_read_delay="2000" />
     </sound_model_config>
 
+    <!-- Google Music Detection -->
+    <sound_model_config>
+        <param vendor_uuid="9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15" />
+        <param execution_type="ADSP" />
+        <param library="none" />
+        <param max_ape_phrases="1" />
+        <param max_ape_users="1" />
+        <!-- Profile specific data which the algorithm can support -->
+        <param sample_rate="16000" />
+        <param bit_width="16" />
+        <param out_channels="1"/> <!-- Module output channels -->
+        <lsm_usecase>
+            <param capture_device="HANDSET" />
+            <!-- adm_cfg_profile should match with the one defined under adm_config -->
+            <!-- Set it to NONE if LSM directly connects to AFE -->
+            <param adm_cfg_profile="FLUENCE" />
+            <!-- fluence_type: "FLUENCE_MIC", "FLUENCE_DMIC", "FLUENCE_TMIC"   -->
+            <!-- "FLUENCE_QMIC". Param value is valid when adm_cfg_profile -->
+            <!-- is FFECNS -->
+            <param fluence_type="FLUENCE_DMIC" />
+            <param execution_mode="ADSP" />
+            <param app_type="4" /> <!-- app type used in ACDB -->
+            <param in_channels="2"/> <!-- Module input channels -->
+            <param load_sound_model_ids="0x18100000, 0x0, 0x00012C14" />
+            <param unload_sound_model_ids="0x18100000, 0x0, 0x00012C15" />
+            <param confidence_levels_ids="0x18100000, 0x0, 0x00012C07" />
+            <param operation_mode_ids="0x18100000, 0x0, 0x00012C02" />
+            <param polling_enable_ids="0x18100000, 0x0, 0x00012C1B" />
+            <param custom_config_ids="0x18100000, 0x0, 0x00012C20" />
+        </lsm_usecase>
+        <lsm_usecase>
+            <param capture_device="HEADSET" />
+            <param adm_cfg_profile="NONE" />
+            <param fluence_type="NONE" />
+            <param execution_mode="ADSP" />
+            <param app_type="3" /> <!-- app type used in ACDB -->
+            <param in_channels="2"/> <!-- Module input channels -->
+            <param load_sound_model_ids="0x18100000, 0x0, 0x00012C14" />
+            <param unload_sound_model_ids="0x18100000, 0x0, 0x00012C15" />
+            <param confidence_levels_ids="0x18100000, 0x0, 0x00012C07" />
+            <param operation_mode_ids="0x18100000, 0x0, 0x00012C02" />
+            <param polling_enable_ids="0x18100000, 0x0, 0x00012C1B" />
+            <param custom_config_ids="0x18100000, 0x0, 0x00012C20" />
+        </lsm_usecase>
+        <!-- format: "ADPCM_packet" or "PCM_packet" !-->
+        <!-- transfer_mode: "FTRT" or "RT" -->
+        <!--  kw_duration is in milli seconds. It is valid only for FTRT
+            transfer mode -->
+        <param capture_keyword="PCM_raw, FTRT, 5000" />
+        <param client_capture_read_delay="2000" />
+    </sound_model_config>
+
     <!-- Multiple adm_config tags can be listed, each with unique profile name. -->
     <!-- app_type to match corresponding value from ACDB -->
     <adm_config>
