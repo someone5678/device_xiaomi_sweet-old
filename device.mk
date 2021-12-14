@@ -415,8 +415,8 @@ PRODUCT_PACKAGES += \
 
 # ContextHub
 PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-service \
-    android.hardware.contexthub@1.0-impl
+    android.hardware.contexthub@1.2-impl.generic \
+    android.hardware.contexthub@1.2-service.generic
 
 # CAS
 PRODUCT_PACKAGES += \
