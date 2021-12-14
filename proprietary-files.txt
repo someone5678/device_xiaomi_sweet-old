@@ -1920,3 +1920,7 @@ vendor/etc/chre/columbus_lite.so
 vendor/etc/chre/gesture.napp_header
 vendor/etc/chre/gesture.so
 vendor/etc/chre/preloaded_nanoapps.json
+
+# Nano App Clients - from google/sunfish/sunfish:12/SPB5.210812.002/7671067:user/release-keys
+vendor/lib/libsueznanoappclients.so
+vendor/lib64/libsueznanoappclients.so
