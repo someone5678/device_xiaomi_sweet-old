@@ -29,11 +29,6 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USE_QTI_BT_STACK := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth/include
 
-# CHRE
-CHRE_DAEMON_ENABLED := true
-CHRE_DAEMON_LPMA_ENABLED := true
-CHRE_DAEMON_LOAD_INTO_SENSORSPD := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         androidboot.memcg=1 \

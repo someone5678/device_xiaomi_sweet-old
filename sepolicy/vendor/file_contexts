@@ -1,5 +1,4 @@
 # HALs
-/vendor/bin/hw/android\.hardware\.contexthub@1\.2-service\.generic          u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.lights-service\.sweet        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sweet  u:object_r:hal_fingerprint_default_exec:s0

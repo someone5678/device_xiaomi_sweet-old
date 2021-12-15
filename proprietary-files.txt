@@ -549,6 +549,10 @@ vendor/etc/sn100u_pnx_ese_3.pnscr
 vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
+vendor/etc/sound_trigger_mixer_paths_qrd.xml
+vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/system_properties.xml
@@ -1901,26 +1905,3 @@ vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|59192e638ea3b13ee9005d730ce269db66a4d10a
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
-
-# Now Playing - from google/sunfish/sunfish:12/SPB5.210812.002/7671067:user/release-keys
-product/etc/ambient/matcher_tah.leveldb
-product/etc/firmware/music_detector.descriptor
-product/etc/firmware/music_detector.sound_model
-vendor/etc/chre/ambient.napp_header
-vendor/etc/chre/ambient.so
-vendor/etc/chre/ambient_micro.napp_header
-vendor/etc/chre/ambient_micro.so
--product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
-
-# Gesture - from google/sunfish/sunfish:12/SPB5.210812.002/7671067:user/release-keys
-vendor/etc/chre/columbus.napp_header
-vendor/etc/chre/columbus.so
-vendor/etc/chre/columbus_lite.napp_header
-vendor/etc/chre/columbus_lite.so
-vendor/etc/chre/gesture.napp_header
-vendor/etc/chre/gesture.so
-vendor/etc/chre/preloaded_nanoapps.json
-
-# Nano App Clients - from google/sunfish/sunfish:12/SPB5.210812.002/7671067:user/release-keys
-vendor/lib/libsueznanoappclients.so
-vendor/lib64/libsueznanoappclients.so
