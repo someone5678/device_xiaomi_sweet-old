@@ -6,3 +6,7 @@ git apply --directory='device/qcom/sepolicy_vndr' device/xiaomi/sweet/.patch/dev
 # PixelPropsUtils Dialer whitelisting
 cd frameworks/base && git reset --hard && cd ../../
 git apply --directory='frameworks/base' device/xiaomi/sweet/.patch/frameworks_base-PixelPropsUtils.patch
+
+# Revert "Don't enable ADB by default on userdebug builds"
+cd build/make && git reset --hard && cd ../../
+git apply --directory='build/make' device/xiaomi/sweet/.patch/build_make-post_process_props.patch
