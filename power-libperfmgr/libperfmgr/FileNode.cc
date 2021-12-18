@@ -96,23 +96,5 @@ bool FileNode::GetHoldFd() const {
     return hold_fd_;
 }
 
-void FileNode::DumpToFd(int fd) const {
-    std::string node_value;
-    if (!android::base::ReadFileToString(node_path_, &node_value)) {
-        LOG(ERROR) << "Failed to read node path: " << node_path_;
-    }
-    node_value = android::base::Trim(node_value);
-    std::string buf(android::base::StringPrintf(
-        "%s\t%s\t%zu\t%s\n", name_.c_str(), node_path_.c_str(),
-        current_val_index_, node_value.c_str()));
-    if (!android::base::WriteStringToFd(buf, fd)) {
-        LOG(ERROR) << "Failed to dump fd: " << fd;
-    }
-    for (std::size_t i = 0; i < req_sorted_.size(); i++) {
-        req_sorted_[i].DumpToFd(
-            fd, android::base::StringPrintf("\t\tReq%zu:\t", i));
-    }
-}
-
 }  // namespace perfmgr
 }  // namespace android

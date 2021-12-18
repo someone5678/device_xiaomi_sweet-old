@@ -64,23 +64,6 @@ TEST(PropertyNodeTest, InitDefaultTest) {
     _VerifyPropertyValue(key2, "value0");
 }
 
-// Test DumpToFd
-TEST(PropertyNodeTest, DumpToFdTest) {
-    std::string key = _InitProperty("test.libperfmgr.key");
-    PropertyNode t("test_dump", key, {{"value0"}, {"value1"}, {"value2"}}, 1,
-                   true);
-    t.Update(false);
-    TemporaryFile dumptf;
-    t.DumpToFd(dumptf.fd);
-    fsync(dumptf.fd);
-    std::string buf(
-        android::base::StringPrintf("test_dump\t%s\t1\tvalue1\n", key.c_str()));
-    std::string s;
-    EXPECT_TRUE(android::base::ReadFileToString(dumptf.path, &s))
-        << strerror(errno);
-    EXPECT_EQ(buf, s);
-}
-
 // Test GetValueIndex
 TEST(PropertyNodeTest, GetValueIndexTest) {
     std::string key = _InitProperty("test.libperfmgr.key");

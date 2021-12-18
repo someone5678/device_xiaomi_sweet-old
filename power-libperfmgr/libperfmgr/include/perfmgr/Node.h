@@ -67,7 +67,6 @@ class Node {
     std::size_t GetDefaultIndex() const;
     bool GetResetOnInit() const;
     bool GetValueIndex(const std::string& value, std::size_t* index) const;
-    virtual void DumpToFd(int fd) const = 0;
 
   protected:
     Node(std::string name, std::string node_path,

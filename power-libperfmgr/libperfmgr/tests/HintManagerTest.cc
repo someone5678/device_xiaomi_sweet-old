@@ -231,35 +231,6 @@ TEST_F(HintManagerTest, HintSupportedTest) {
     EXPECT_FALSE(hm.IsHintSupported("NO_SUCH_HINT"));
 }
 
-// Test DumpToFd
-TEST_F(HintManagerTest, DumpToFdTest) {
-    HintManager hm(nm_, actions_);
-    TemporaryFile dumptf;
-    hm.DumpToFd(dumptf.fd);
-    fsync(dumptf.fd);
-    std::ostringstream dump_buf;
-    dump_buf << "========== Begin perfmgr nodes ==========\nNode Name\tNode "
-                "Path\tCurrent Index\tCurrent Value\nn0\t"
-             << files_[0]->path << "\t2\t\nn1\t" << files_[1]->path
-             << "\t2\t\nn2\tvendor.pwhal.mode\t2\t\n==========  End perfmgr "
-                "nodes  ==========\n";
-    _VerifyPathValue(dumptf.path, dump_buf.str());
-    TemporaryFile dumptf_started;
-    EXPECT_TRUE(hm.Start());
-    std::this_thread::sleep_for(kSLEEP_TOLERANCE_MS);
-    EXPECT_TRUE(hm.IsRunning());
-    hm.DumpToFd(dumptf_started.fd);
-    fsync(dumptf_started.fd);
-    dump_buf.str("");
-    dump_buf.clear();
-    dump_buf << "========== Begin perfmgr nodes ==========\nNode Name\tNode "
-                "Path\tCurrent Index\tCurrent Value\nn0\t"
-             << files_[0]->path << "\t2\t\nn1\t" << files_[1]->path
-             << "\t2\tn1_value2\nn2\tvendor.pwhal.mode\t2\tn2_value2\n========="
-                "=  End perfmgr nodes  ==========\n";
-    _VerifyPathValue(dumptf_started.path, dump_buf.str());
-}
-
 // Test hint/cancel/expire with dummy actions
 TEST_F(HintManagerTest, HintTest) {
     HintManager hm(nm_, actions_);

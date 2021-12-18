@@ -70,9 +70,6 @@ class HintManager {
     // Return available hints managed by HintManager
     std::vector<std::string> GetHints() const;
 
-    // Dump internal status to fd
-    void DumpToFd(int fd);
-
     // Start thread loop
     bool Start();
 

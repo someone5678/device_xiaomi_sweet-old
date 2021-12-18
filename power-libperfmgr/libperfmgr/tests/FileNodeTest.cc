@@ -58,20 +58,6 @@ TEST(FileNodeTest, InitDefaultTest) {
     _VerifyPathValue(tf2.path, "value0");
 }
 
-// Test DumpToFd
-TEST(FileNodeTest, DumpToFdTest) {
-    TemporaryFile tf;
-    FileNode t("test_dump", tf.path, {{"value0"}, {"value1"}, {"value2"}}, 1,
-               true);
-    t.Update(false);
-    TemporaryFile dumptf;
-    t.DumpToFd(dumptf.fd);
-    fsync(dumptf.fd);
-    std::string buf(
-        android::base::StringPrintf("test_dump\t%s\t1\tvalue1\n", tf.path));
-    _VerifyPathValue(dumptf.path, buf);
-}
-
 // Test GetValueIndex
 TEST(FileNodeTest, GetValueIndexTest) {
     TemporaryFile tf;

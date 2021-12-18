@@ -39,8 +39,6 @@ class FileNode : public Node {
 
     bool GetHoldFd() const;
 
-    void DumpToFd(int fd) const override;
-
   private:
     FileNode(const Node& other) = delete;
     FileNode& operator=(Node const&) = delete;

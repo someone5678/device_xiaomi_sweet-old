@@ -35,8 +35,6 @@ class PropertyNode : public Node {
 
     std::chrono::milliseconds Update(bool log_error) override;
 
-    void DumpToFd(int fd) const override;
-
   private:
     PropertyNode(const Node& other) = delete;
     PropertyNode& operator=(Node const&) = delete;

@@ -88,24 +88,6 @@ std::vector<std::string> HintManager::GetHints() const {
     return hints;
 }
 
-void HintManager::DumpToFd(int fd) {
-    std::string header(
-        "========== Begin perfmgr nodes ==========\n"
-        "Node Name\t"
-        "Node Path\t"
-        "Current Index\t"
-        "Current Value\n");
-    if (!android::base::WriteStringToFd(header, fd)) {
-        LOG(ERROR) << "Failed to dump fd: " << fd;
-    }
-    nm_->DumpToFd(fd);
-    std::string footer("==========  End perfmgr nodes  ==========\n");
-    if (!android::base::WriteStringToFd(footer, fd)) {
-        LOG(ERROR) << "Failed to dump fd: " << fd;
-    }
-    fsync(fd);
-}
-
 bool HintManager::Start() {
     return nm_->Start();
 }

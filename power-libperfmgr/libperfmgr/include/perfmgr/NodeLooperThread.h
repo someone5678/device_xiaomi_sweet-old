@@ -73,9 +73,6 @@ class NodeLooperThread : public ::android::Thread {
     bool Cancel(const std::vector<NodeAction>& actions,
                 const std::string& hint_type);
 
-    // Dump all nodes to fd
-    void DumpToFd(int fd);
-
     // Return true when successfully started the looper thread
     bool Start();
 
