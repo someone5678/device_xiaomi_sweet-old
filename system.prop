@@ -53,9 +53,6 @@ ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
-# Radio
-persist.sys.fflag.override.settings_provider_model=false
-
 # Kill IMS Logs
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.report_codec=1
