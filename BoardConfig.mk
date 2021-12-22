@@ -42,6 +42,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         service_locator.enable=1 \
                         swiotlb=1 \
                         androidboot.usbcontroller=a600000.dwc3 \
+                        swiotlb=2048 \
+                        cgroup.memory=nokmem,nosocket \
+                        reboot=panic_warm \
                         kpti=off \
                         loop.max_part=7 \
                         androidboot.init_fatal_reboot_target=recovery
