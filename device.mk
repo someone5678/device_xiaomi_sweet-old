@@ -431,6 +431,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Qualcomm MSM Interface
+PRODUCT_PACKAGES += \
+    libjson \
+    libjson.vendor
+
 # Qualcomm Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
