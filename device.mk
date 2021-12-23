@@ -434,7 +434,9 @@ PRODUCT_PACKAGES += \
 # Qualcomm Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
-    libvndfwk_detect_jni.qti
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
