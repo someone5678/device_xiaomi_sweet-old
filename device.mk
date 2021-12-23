@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libvolumelistener \
     libaudiopreprocessing \
+    audio.a2dp.default \
+    audio.bluetooth.default \
     audio.r_submix.default \
     android.hardware.audio.service \
     android.hardware.audio.common-util \
@@ -155,6 +157,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    BluetoothOverlaySweet \
     CarrierConfigOverlaySweet \
     DialerOverlaySweet \
     DocumentsUIOverlaySweet \
@@ -505,7 +508,14 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    libbtconfigstore \
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -518,6 +528,10 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libgui-shim
+
+# QTI Bluetooth
+-include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
 include vendor/dolby/dolby.mk

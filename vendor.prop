@@ -116,12 +116,6 @@ telephony.lteOnCdmaDevice=1
 
 persist.fuse_sdcard=true
 
-vendor.bluetooth.soc=cherokee
-persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.bt.a2dp.mac_whitelist=false
-persist.vendor.btsatck.absvolfeature=true
-
 ro.wlan.vendor=qcom
 ro.wlan.chip=39xx
 ro.wlan.mimo=0
@@ -207,17 +201,11 @@ persist.sys.gps.fence=true
 
 persist.vendor.calisar.times=255
 
-persist.vendor.btstack.enable.twsplus=false
-persist.vendor.btstack.connect.peer_earbud=false
-persist.vendor.btstack.enable.twsplussho=false
-
 persist.vendor.dc_backlight.threshold=488
 
 persist.radio.skhwc_matchres=null
 
 persist.vendor.radio.dynamic_sar=1
-
-persist.vendor.bluetooth.ble_drop_power=true
 
 persist.vendor.radio.ucdetect.usb=true
 
@@ -244,15 +232,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
-vendor.qcom.bluetooth.soc=cherokee
-persist.vendor.qcom.bluetooth.soc=cherokee
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
-ro.vendor.bluetooth.wipower=false
-persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-persist.vendor.qcom.bluetooth.scram.enabled=true
-persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
 debug.sf.hw=0
@@ -312,10 +291,6 @@ vendor.audio.safx.pbe.enabled=false
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-ro.bluetooth.a2dp_offload.supported=true
-persist.bluetooth.a2dp_offload.disabled=false
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.hw.aac.encoder=false
@@ -371,7 +346,6 @@ vendor.audio.feature.wsa.enable=false
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.spkr_prot.enable=true
-persist.vendor.bt.aac_frm_ctl.enabled=true
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.soundfx.usb=true
 vendor.audio.spkcal.copy.inhal=true
