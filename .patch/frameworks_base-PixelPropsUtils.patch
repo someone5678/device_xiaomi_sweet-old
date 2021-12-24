@@ -1,18 +1,17 @@
-From df065fd4db6e191458b16af214f7fc2893b4a7fd Mon Sep 17 00:00:00 2001
+From 2d9050e6beb25ace12590d14a742c91c576f990a Mon Sep 17 00:00:00 2001
 From: someone5678 <nemui3353@gmail.com>
-Date: Sun, 28 Nov 2021 12:17:08 +0900
+Date: Sat, 25 Dec 2021 03:08:17 +0900
 Subject: [PATCH] frameworks_base-PixelPropsUtils
 
-Change-Id: If12354cc265c4ac52df461e0b3ef9b55c9a89a34
 ---
  core/java/com/android/internal/util/custom/PixelPropsUtils.java | 1 +
  1 file changed, 1 insertion(+)
 
 diff --git a/core/java/com/android/internal/util/custom/PixelPropsUtils.java b/core/java/com/android/internal/util/custom/PixelPropsUtils.java
-index 555eb6d3..faa2a6d5 100644
+index 4f5ea8d17938..d982d752ebeb 100644
 --- a/core/java/com/android/internal/util/custom/PixelPropsUtils.java
 +++ b/core/java/com/android/internal/util/custom/PixelPropsUtils.java
-@@ -54,6 +54,7 @@ public class PixelPropsUtils {
+@@ -55,6 +55,7 @@ public class PixelPropsUtils {
          propsToKeep = new HashMap<>();
          propsToKeep.put("com.google.android.settings.intelligence", new ArrayList<>(Collections.singletonList("FINGERPRINT")));
          propsToKeep.put("com.google.android.GoogleCamera", allProps);
