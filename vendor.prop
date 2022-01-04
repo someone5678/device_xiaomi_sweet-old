@@ -231,6 +231,7 @@ ro.hardware.egl=adreno
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
+debug.sdm.support_writeback=0
 debug.sf.hw=0
 debug.egl.hw=0
 debug.sf.enable_gl_backpressure=1
