@@ -10,6 +10,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := aosp_sweet
 PRODUCT_DEVICE := sweet
