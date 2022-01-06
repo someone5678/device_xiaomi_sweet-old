@@ -106,8 +106,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.sweet.rc \
-    init.target.rc \
-    init.performance_level.rc
+    init.target.rc
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
