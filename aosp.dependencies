@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "vantoman/kernel_xiaomi_sm6150",
+    "repository": "someone5678/kernel_xiaomi_sm6150",
     "target_path": "kernel/xiaomi/sweet",
     "branch": "12"
   },
