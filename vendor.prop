@@ -147,6 +147,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.hardware.fingerprint=fpc
 ro.hardware.fp.sideCap=true
 
+# FM
+vendor.hw.fm.init=0
+
 # GPU
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 
@@ -204,6 +207,11 @@ ro.vendor.audio.soundfx.type=mi
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=true
+ro.vendor.perf-hal.ver=2.2
+
+# QSPM
+ro.vendor.qspm.enable=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
