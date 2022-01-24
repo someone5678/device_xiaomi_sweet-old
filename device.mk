@@ -583,5 +583,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
-include vendor/dolby/dolby.mk
 include vendor/pixel-additional/config.mk
