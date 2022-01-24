@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_FRAMEWORK_MANIFEST_FILE += device/xiaomi/sweet/configs/telephony/framework_manifest.xml
+
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 $(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
 
@@ -17,7 +19,12 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/sweet/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     device/xiaomi/sweet/configs/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
+PRODUCT_COPY_FILES += \
+    device/xiaomi/sweet/configs/telephony/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    device/xiaomi/sweet/configs/telephony/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
+
 PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
     android.system.net.netd@1. \
     android.system.net.netd@1.1.vendor \
     android.hardware.radio@1.6 \
@@ -40,9 +47,13 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
     qti_telephony_hidl_wrapper.xml \
+    qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
+    qti-telephony-utils-prd \
     qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
@@ -58,9 +69,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     persist.radio.multisim.config=dsds \
+    persist.vendor.cne.feature=1 \
+    persist.vendor.dpm.feature=11 \
     ril.subscription.types=NV,RUIM \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=22,20 \
+    ro.vendor.use_data_netmgrd=true \
     telephony.lteOnCdmaDevice=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
