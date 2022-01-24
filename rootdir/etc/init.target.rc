@@ -66,6 +66,7 @@ on fs
     mkdir /mnt/vendor/persist/camera 0777 root root
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     chmod 644 /persist/audio/us_manual_cal
+    chown media audio /mnt/vendor/persist/audio
 
 on late-fs
     mount_all --late /vendor/etc/fstab.qcom
