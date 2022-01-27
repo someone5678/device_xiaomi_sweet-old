@@ -1,0 +1,2 @@
+allow apexd apexd:capability { kill };
+allow apexd apex_art_staging_data_file:dir { getattr };
