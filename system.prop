@@ -66,6 +66,7 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Camera
 persist.vendor.camera.facepp.fdenable=0
+vendor.camera.aux.packagelist=com.google.android.apps.cameralite
 
 # Charger
 ro.charger.enable_suspend=true
