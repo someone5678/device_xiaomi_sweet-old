@@ -622,6 +622,21 @@
         <fqname>@1.3::IHidlVppService/vppService</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.trustedui</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITrustedUI</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITrustedInput</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::ITrustedInput/default</fqname>
+        <fqname>@1.2::ITrustedUI/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.wifi.wifilearner</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
