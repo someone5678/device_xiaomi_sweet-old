@@ -15,13 +15,3 @@
 soong_namespace {
     imports: ["hardware/qcom-caf/common/fwk-detect"],
 }
-
-cc_library_shared {
-    name: "android.hidl.base@1.0",
-
-}
-
-cc_library_shared {
-    name: "android.hidl.manager@1.0",
-
-}

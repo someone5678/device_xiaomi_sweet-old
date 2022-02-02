@@ -47,12 +47,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.usb.sh",
-    src: "init.qcom.usb.sh",
-    soc_specific: true
-}
-
-sh_binary {
     name: "init.qti.chg_policy.sh",
     src: "init.qti.chg_policy.sh",
     soc_specific: true

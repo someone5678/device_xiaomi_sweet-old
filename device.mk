@@ -4,6 +4,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 
+# Platform
+MSMSTEPPE := sm6150
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -74,8 +78,6 @@ PRODUCT_COPY_FILES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0 \
     android.hidl.allocator@1.0 \
     libhwbinder \
     libhwbinder.vendor \
@@ -108,7 +110,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.sm6150.perf.rc \
     init.sweet.rc \
     init.target.rc
@@ -122,10 +123,13 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.qcv.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh
 
 # Keyhandler
 PRODUCT_PACKAGES += \
@@ -600,8 +604,20 @@ PRODUCT_PRODUCT_PROPERTIES += \
 -include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
-include vendor/xiaomi/sweet/sweet-vendor.mk
+$(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 include vendor/dolby/config.mk
 include vendor/pixel-additional/config.mk
 include build/make/target/product/iorap_large_memory_config.mk
 
+# QC common
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    av \
+    bt \
+    display \
+    gps \
+    media-legacy \
+    vibrator \
+    wlan
+
+$(call inherit-product, device/qcom/common/common.mk)

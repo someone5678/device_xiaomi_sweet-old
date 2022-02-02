@@ -1,4 +1,5 @@
 DEVICE_PATH := device/xiaomi/sweet
+COMMON_PATH := device/qcom/common
 BOARD_VENDOR := xiaomi
 
 BUILD_BROKEN_DUP_RULES := true
@@ -61,6 +62,7 @@ TARGET_KERNEL_CONFIG := sweet_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_VERSION := 4.14
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
@@ -128,6 +130,7 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
@@ -188,3 +191,9 @@ TARGET_DISABLED_UBWC := true
 # Audio
 USE_SOUND_TRIGGER := false
 TARGET_PROVIDES_AUDIO_EXTNS := true
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Power
+TARGET_PROVIDES_POWERHAL := true

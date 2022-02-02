@@ -22,5 +22,17 @@
     "repository": "someone5678/vendor_pixel-additional",
     "target_path": "vendor/pixel-additional",
     "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "PixelExperience-Devices/device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "twelve"
+  },
+  {
+    "remote": "pixel-devices-blobs",
+    "repository": "vendor_qcom_common",
+    "target_path": "vendor/qcom/common",
+    "branch": "twelve"
   }
 ]
