@@ -4,3 +4,6 @@ vendor.xiaomi.hardware.touchfeature::ITouchFeature u:object_r:hal_touchfeature_h
 vendor.nxp.nxpnfclegacy::INxpNfcLegacy                                           u:object_r:hal_nfc_hwservice:s0
 
 vendor.qti.hardware.vpp::vppService                                              u:object_r:hal_vpp_hwservice:s0
+
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio0                             u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio1                             u:object_r:hal_telephony_hwservice:s0
