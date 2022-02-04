@@ -101,7 +101,6 @@ media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
-vendor.mm.enable.qcom_parser=67108863
 persist.mm.enable.prefetch=true
 
 ro.netflix.bsp_rev=Q6150-17263-1
@@ -269,8 +268,6 @@ vendor.usb.use_ffs_mtp=0
 
 # Media
 debug.media.codec2=2
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=512
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
@@ -388,7 +385,6 @@ ro.vendor.nfc.repair=1
 ro.vendor.se.type=HCE,UICC
 ro.hardware.fp.vendor=fpc,fortsense
 ro.hardware.fp.sideCap=true
-vendor.display.enable_default_color_mode=0
 debug.sf.set_idle_timer_ms=3000
 sys.haptic.motor=linear
 sys.haptic.down.weak=0
@@ -424,5 +420,4 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.has_HDR_display=true
