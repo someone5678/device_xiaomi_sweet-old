@@ -569,8 +569,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
-include vendor/dolby/config.mk
-include vendor/pixel-additional/config.mk
+$(call inherit-product-if-exists, vendor/dolby/config.mk)
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 include build/make/target/product/iorap_large_memory_config.mk
 
 # QC common
