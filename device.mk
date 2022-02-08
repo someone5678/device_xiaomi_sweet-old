@@ -14,9 +14,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Device configs makefiles
 $(call inherit-product, device/xiaomi/sweet/configs/device/telephony.mk)
 
-# Firmware
-$(call inherit-product, vendor/xiaomi-firmware/sweet/Android.mk)
-
 # AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
@@ -235,8 +232,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/qcom/opensource/data-ipa-cfg-mgr \
-    vendor/xiaomi-firmware
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
 # ANT+
 PRODUCT_PACKAGES += \

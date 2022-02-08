@@ -7,12 +7,6 @@
   },
   {
     "remote": "github",
-    "repository": "someone5678/vendor_xiaomi-firmware",
-    "target_path": "vendor/xiaomi-firmware",
-    "branch": "twelve"
-  },
-  {
-    "remote": "github",
     "repository": "someone5678/kernel_xiaomi_sweet",
     "target_path": "kernel/xiaomi/sweet",
     "branch": "twelve"
