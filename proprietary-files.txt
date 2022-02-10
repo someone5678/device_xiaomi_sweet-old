@@ -435,13 +435,6 @@ vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/lowi.conf
-vendor/etc/media_codecs_google_audio.xml
-vendor/etc/media_codecs_google_c2_audio.xml
-vendor/etc/media_codecs_google_c2_video.xml
-vendor/etc/media_codecs_google_c2.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video_le.xml
-vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_performance_v1.xml
 vendor/etc/media_codecs_performance_v2.xml
 vendor/etc/media_codecs_performance.xml
