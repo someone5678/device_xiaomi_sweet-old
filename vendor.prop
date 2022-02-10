@@ -86,7 +86,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 persist.mm.enable.prefetch=true
 
@@ -239,7 +238,14 @@ vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
 
 # Media
+audio.offload.video=true
 debug.media.codec2=2
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=512
+vendor.media.target.version=2
+debug.stagefright.c2inputsurface=-1
+vendor.media.omx=0
+vendor.qc2.venc.avgqp.enable=1
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
@@ -257,7 +263,6 @@ vendor.audio.tunnel.encode=false
 persist.vendor.audio.ras.enabled=false
 vendor.audio.offload.buffer.size.kb=32
 audio.offload.min.duration.secs=40
-audio.offload.video=true
 vendor.audio.offload.track.enable=false
 audio.deep_buffer.media=true
 vendor.voice.path.for.pcm.voip=false

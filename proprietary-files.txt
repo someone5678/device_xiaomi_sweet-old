@@ -1,6 +1,4 @@
 # Unpinned section - from MIUI v12.5.8.0 RKFMIXM
-# odm
-odm/etc/media_profiles_V1_0.xml
 
 # product
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -435,16 +433,6 @@ vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/lowi.conf
-vendor/etc/media_codecs_performance_v1.xml
-vendor/etc/media_codecs_performance_v2.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_v1.xml
-vendor/etc/media_codecs_v2.xml
-vendor/etc/media_codecs_vendor_v1.xml
-vendor/etc/media_codecs_vendor_v2.xml
-vendor/etc/media_codecs_vendor.xml
-vendor/etc/media_codecs.xml
-vendor/etc/media_profiles.xml
 vendor/etc/mi_us_sweep.wav
 vendor/etc/mi_us_whitenoise.wav
 vendor/etc/mixer_paths_qrd.xml
@@ -472,10 +460,7 @@ vendor/etc/sap.conf
 vendor/etc/screen_light.xml
 vendor/etc/sdr_config.cfg
 vendor/etc/seccomp_policy/atfwd@2.0.policy
-vendor/etc/seccomp_policy/codec2.vendor.base.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 vendor/etc/seccomp_policy/imsrtp.policy
-vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
@@ -537,7 +522,6 @@ vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/etc/system_properties.xml
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-class0.conf
@@ -950,7 +934,6 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqcmaputils.so
-vendor/lib64/libqcodec2.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqdi.so
@@ -1488,7 +1471,6 @@ vendor/lib/libqcbor.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqcmaputils.so
-vendor/lib/libqcodec2.so
 vendor/lib/libqcrildatactl.so
 vendor/lib/libqcrilFramework.so
 vendor/lib/libqdi.so
@@ -1823,3 +1805,9 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a585
 
 # DRM - from mata OPM1.170911.254
 vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
+
+# Media-C2 - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/lib/libqcodec2.so
+vendor/lib64/libqcodec2.so
