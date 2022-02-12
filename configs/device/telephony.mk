@@ -93,10 +93,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.report_codec=1 \
     persist.vendor.radio.sib16_support=1
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.telephony.sim_slots.count=2 \
-    telephony.active_modems.max_count=2
-
 ifeq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.ims.disableADBLogs=1 \
