@@ -107,11 +107,9 @@ vendor/app/CneApp/oat/arm64/CneApp.vdex
 vendor/app/com.qualcomm.qti.improvetouch.service/oat/arm64/com.qualcomm.qti.improvetouch.service.odex
 vendor/app/com.qualcomm.qti.improvetouch.service/oat/arm64/com.qualcomm.qti.improvetouch.service.vdex
 -vendor/app/FS_FpFactory/FS_FpFactory.apk
--vendor/app/IconShapeOverlay/IconShapeOverlay.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/app/IWlanService/oat/arm64/IWlanService.odex
 vendor/app/IWlanService/oat/arm64/IWlanService.vdex
--vendor/app/NotchOverlay/NotchOverlay.apk
 -vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/app/TimeService/oat/arm64/TimeService.odex
 vendor/app/TimeService/oat/arm64/TimeService.vdex
