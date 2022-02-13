@@ -16,7 +16,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/sweet/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     device/xiaomi/sweet/configs/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
 PRODUCT_COPY_FILES += \
