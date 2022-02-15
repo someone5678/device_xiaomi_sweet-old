@@ -1,0 +1,130 @@
+prebuilt_etc {
+    name: "a2dp_audio_policy_configuration.xml",
+    src: "a2dp_audio_policy_configuration.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_effects.xml",
+    src: "audio_effects.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_io_policy.conf",
+    src: "audio_io_policy.conf",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_platform_info.xml",
+    src: "audio_platform_info.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_platform_info_intcodec.xml",
+    src: "audio_platform_info_intcodec.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_policy_configuration.xml",
+    src: "audio_policy_configuration.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_policy_volumes.xml",
+    src: "audio_policy_volumes.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "audio_tuning_mixer.txt",
+    src: "audio_tuning_mixer_tavil.txt",
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "bluetooth_qti_audio_policy_configuration.xml",
+    src: "bluetooth_qti_audio_policy_configuration.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_idp.xml",
+    src: "mixer_paths_idp.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_overlay_dynamic.xml",
+    src: "mixer_paths_overlay_dynamic.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_overlay_static.xml",
+    src: "mixer_paths_overlay_static.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "mixer_paths_wcd9375qrd.xml",
+    src: "mixer_paths_wcd9375qrd.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "r_submix_audio_policy_configuration.xml",
+    src: "r_submix_audio_policy_configuration.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+prebuilt_etc {
+    name: "sound_trigger_mixer_paths.xml",
+    src: "sound_trigger_mixer_paths.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "sound_trigger_mixer_paths_qrd.xml",
+    src: "sound_trigger_mixer_paths_qrd.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "sound_trigger_mixer_paths_wcd9340.xml",
+    src: "sound_trigger_mixer_paths_wcd9340.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "sound_trigger_platform_info.xml",
+    src: "sound_trigger_platform_info.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "usb_audio_policy_configuration.xml",
+    src: "usb_audio_policy_configuration.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}

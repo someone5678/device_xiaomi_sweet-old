@@ -1,0 +1,34 @@
+prebuilt_etc {
+    name: "media_codecs.xml",
+    src: "media_codecs.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_c2.xml",
+    src: "media_codecs_c2.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_omx.xml",
+    src: "media_codecs_omx.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "media_codecs_performance_c2.xml",
+    src: "media_codecs_performance_c2.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "media_profiles_V1_0.xml",
+    src: "media_profiles_V1_0.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}

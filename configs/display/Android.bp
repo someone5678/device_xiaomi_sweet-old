@@ -1,0 +1,27 @@
+prebuilt_etc {
+    name: "dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml",
+    src: "dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml",
+    src: "qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "hdr_config.cfg",
+    src: "hdr_config.cfg",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "sdr_config.cfg",
+    src: "sdr_config.cfg",
+    filename_from_src: true,
+	soc_specific: true,
+}

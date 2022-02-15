@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "msm_irqbalance.conf",
+    src: "msm_irqbalance.conf",
+    filename_from_src: true,
+	soc_specific: true,
+}
