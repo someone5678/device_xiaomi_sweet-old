@@ -43,6 +43,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         swiotlb=1 \
                         androidboot.usbcontroller=a600000.dwc3 \
                         kpti=off \
+                        loop.max_part=7 \
                         androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_BASE        := 0x00000000
