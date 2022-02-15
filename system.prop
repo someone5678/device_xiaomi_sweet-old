@@ -1,102 +1,49 @@
-# dex2oat64
-dalvik.vm.dex2oat64.enabled=true
-ro.sys.fw.dex2oat_thread_count=8
-
-# Volume steps
-ro.config.media_vol_steps=100
-
-# VoLTE
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-persist.dbg.ims_volte_enable=1
-persist.radio.rat_on=combine
-persist.radio.data_ltd_sys_ind=1
-persist.radio.data_con_rprt=1
-persist.radio.calls.on.ims=1
-persist.vendor.ims.disableADBLogs=1
-persist.vendor.ims.disableDebugLogs=1
-persist.vendor.ims.disableIMSLogs=1
-persist.vendor.ims.disableQXDMLogs=1
-
-# Bluetooth
-persist.bluetooth.bqr.event_mask=14
-persist.bluetooth.bqr.min_interval_ms=500
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bluetooth.ble_drop_power=true
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.bt.a2dp.mac_whitelist=false
-persist.vendor.bt.aac_frm_ctl.enabled=true
-persist.vendor.btsatck.absvolfeature=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.btstack.connect.peer_earbud=true
-persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.enable.twsplussho=true
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
-persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
-persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.scram.enabled=true
-persist.vendor.qcom.bluetooth.soc=cherokee
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.library_name=libbluetooth_qti.so
-ro.vendor.bluetooth.wipower=false
-vendor.bluetooth.soc=cherokee
-vendor.qcom.bluetooth.soc=cherokee
-
-# Dalvik
-pm.dexopt.install=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=quicken
-
-# Display
-debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=0
-ro.sf.lcd_density=440
-
-# WiFi Display
-persist.debug.wfd.enable=1
-
-# Camera
-persist.vendor.camera.facepp.fdenable=0
-vendor.camera.aux.packagelist=com.google.android.apps.cameralite
-
 # Charger
 ro.charger.enable_suspend=true
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# Zygote
-persist.device_config.runtime_native.usap_pool_enabled=true
+# LMKDs
+ro.lmk.critical_upgrade=true
+ro.lmk.downgrade_pressure=60
+ro.lmk.log_stats=false
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.thrashing_limit=30
+ro.lmk.upgrade_pressure=40
+
+# Netflix custom property
+ro.netflix.bsp_rev=Q6150-17263-1
 
 # One handed mode
 ro.support_one_handed_mode=true
+
+# RCS
+persist.rcs.supported=1
+
+# Radio
+persist.dbg.ims_volte_enable=1
+persist.radio.data_con_rprt=1
+persist.radio.data_ltd_sys_ind=1
+persist.radio.NO_STAPA=1
+persist.radio.rat_on=combine
+persist.radio.VT_CAM_INTERFACE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.calls.on.ims=1
+
+# Recovery
+ro.recovery.ui.margin_height=48
+
+# Time
+persist.vendor.delta_time.enable=true
+
+# WiFi
+wifi.interface=wlan0
 
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
-# ART
-dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.image-dex2oat-threads=8
-
-# Time
-persist.vendor.delta_time.enable=true
-
-# LMKDs
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=40
-ro.lmk.downgrade_pressure=60
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
-ro.lmk.log_stats=false
+# Zygote
+persist.device_config.runtime_native.usap_pool_enabled=true
