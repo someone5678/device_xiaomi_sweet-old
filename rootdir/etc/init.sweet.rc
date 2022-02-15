@@ -25,62 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-# this will make sure you have /data ready and then you try to create the dir.
-on init
-    chown system camera /dev/drv8846_dev
-    chown system camera /dev/akm09970
-    chmod 0660 /dev/drv8846_dev
-    chmod 0660 /dev/akm09970
-
-on boot
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/top-app/boost/cpus 4-7
-    write /dev/cpuset/foreground/cpus 0-6
-    write /dev/cpuset/foreground/boost/cpus 0-6
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/system-background/cpus 0-3
-
-    #Set the default voltage to 5v
-    setprop persist.vendor.cp.taper_term_mv 5000
-
-    setprop persist.vendor.qg_cold_temp -150
-    setprop persist.vendor.qg_coff_gain 1
-    setprop persist.vendor.qg_cld_coff_gain 1.5
-
-# service for fwcheck
-service fwcheck /system/vendor/bin/sh /vendor/bin/fwcheck.sh
-    class main
-    user root
-    group root
-    oneshot
-
-on late-fs
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-4
-    start vendor.qti.hardware.display.allocator
-
-on property:init.svc.cnss_diag=running
-    stop cnss_diag
-
-on property:init.svc.tcpdump=running
-    stop tcpdump
-
-on property:init.svc.vendor.ipacm-diag=running
-    stop vendor.ipacm-diag
-
-on post-fs-data
-    # EAS
-    write /proc/sys/kernel/sched_upmigrate 95
-    write /proc/sys/kernel/sched_downmigrate 85
-
-    # ZRAM setup
-    write /sys/block/zram0/comp_algorithm lz4
-    write /sys/block/zram0/max_comp_streams 8
-    write /proc/sys/vm/page-cluster 0
-
-    setprop vendor.powerhal.init 1
-
 on init && property:ro.boot.hwc=GLOBAL
     start nqnfc_2_0_hal_service
 
@@ -100,17 +44,10 @@ service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     group nfc
     disabled
 
-on boot
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
-
 on property:sys.boot_completed=1
     # Restrict permissions to socket file 
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
-
-on property:vendor.usb.mimode=*
-    setprop persist.vendor.usb.config ${vendor.usb.mimode}
 
 service vendor.bluetooth-1-0-qti /vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
     class hal

@@ -32,3 +32,15 @@ prebuilt_etc {
     sub_dir: "init",
     soc_specific: true
 }
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    soc_specific: true
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    soc_specific: true
+}
