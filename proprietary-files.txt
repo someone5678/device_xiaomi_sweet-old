@@ -363,7 +363,6 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init.leds.sh
-vendor/etc/init/mi_ic.rc
 vendor/etc/init/minidump.rc
 vendor/etc/init/mutualex.rc
 vendor/etc/init/netmgrd.rc
