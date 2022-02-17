@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.0-impl \
     libtinycompress \
-    libtinycompress.vendor
+    libtinycompress.vendor \
+    android.hardware.bluetooth.a2dp@1.0-impl.mock
 
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
