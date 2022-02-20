@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI V13.0.2.0.SKFMIXM and MIUI 13.0.3.0.SKGMIXM
+# Unpinned section - from MIUI V13.0.4.0.SKFMIXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -650,9 +650,6 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 -system_ext/priv-app/ims/ims.apk
--system_ext/app/ImsRcsService/ImsRcsService.apk
--system_ext/app/uceShimService/uceShimService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
@@ -1045,6 +1042,11 @@ vendor/bin/cnss-daemon
 vendor/bin/nv_mac
 
 # Pinned section
+# IMS - from mojito-user-12-SKQ1.210908.001-V13.0.3.0.SKGMIXM-release-keys
+-system_ext/app/ImsRcsService/ImsRcsService.apk|09ecb5757d945b7761ddbf23f1de1ffb2dafde88
+-system_ext/app/uceShimService/uceShimService.apk|29e1853b9055841bf1e543a88586af34918814dc
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|74476767d19fc0f08ba171ecd21b904301f4f1a6
+
 # Audio ACDB - from sweet-user 11 RKQ1.200826.002 V12.0.6.0.RKFMIXM release-keys
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|1607f4018f676dae74fc24efa5fbd1ccb9093812
 vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb|91735baca19020f2136e5d4f8616db458da88ce9
@@ -1064,7 +1066,7 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|db7480734847ad2c1e
 # DRM - from mata OPM1.170911.254
 vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 
-# Graphics (VulkanAPI Layers) From Google Pixel 4 XL coral-user 12 SP1A.211105.002 7743617 release-keys
+# Graphics (VulkanAPI Layers) From coral-user-12-SPB5.210812.002-7654839-release-keys
 -vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 -vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
 
@@ -1077,6 +1079,6 @@ vendor/lib64/libqcodec2.so
 # Media (libsdedrm) - From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
-# Soundtrigger - from sunfish-user-12-SP1A.210812.015-7679548-release-keys
+# Soundtrigger - from sunfish-user-12-SQ1A.220105.002-7961164-release-keys
 vendor/lib64/hw/sound_trigger.primary.sm6150.so|18886433c30b32f99dcddb5c6c3bd1a1e03dfb48
 vendor/lib/hw/sound_trigger.primary.sm6150.so|aa050b609cfde8ea4a6010533a0fb50e66a33e2e
