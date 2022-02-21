@@ -1,0 +1,13 @@
+prebuilt_etc {
+    name: "libnfc-nci.conf",
+    src: "libnfc-nci.conf",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "libnfc-nxp.conf",
+    src: "libnfc-nxp.conf",
+    filename_from_src: true,
+	soc_specific: true,
+}
