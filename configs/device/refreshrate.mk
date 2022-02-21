@@ -1,4 +1,7 @@
-ifeq ($(USE_DYNAMIC_REFRESH_RATE), true)
+USE_REFRESH_RATE_LIST := true
+
+ifeq ($(USE_REFRESH_RATE_LIST), true)
+
 # Refresh Rate Dynamic Props
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms?=500 \
