@@ -13,10 +13,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Device configs makefiles
 $(call inherit-product, device/xiaomi/sweet/configs/device/telephony.mk)
-
-# RefreshRate Settings
 $(call inherit-product, device/xiaomi/sweet/configs/device/refreshrate.mk)
-USE_DYNAMIC_REFRESH_RATE := true
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
