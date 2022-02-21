@@ -58,26 +58,14 @@ on init
     chown system system /sys/class/thermal/thermal_message/temp_state
 
 on fs
-    chown system system /sys/class/hphlr_impedance/hphl
-    chown system system /sys/class/hphlr_impedance/hphr
-    chmod 0440 /sys/class/hphlr_impedance/hphl
-    chmod 0440 /sys/class/hphlr_impedance/hphr
-
     mount_all --early /vendor/etc/fstab.qcom
 
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/audio 0755 system system
-    mkdir /mnt/vendor/persist/haptics 0755 system system
-    mkdir /mnt/vendor/persist/subsys 0770 root system
     mkdir /mnt/vendor/persist/camera 0777 root root
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     chmod 644 /persist/audio/us_manual_cal
-
-    chown system system /sys/class/hphlr_impedance/hphl
-    chown system system /sys/class/hphlr_impedance/hphr
-    chmod 0440 /sys/class/hphlr_impedance/hphl
-    chmod 0440 /sys/class/hphlr_impedance/hphr
 
 on late-fs
     mount_all --late /vendor/etc/fstab.qcom
@@ -116,10 +104,6 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
-
-    # access permissions for FPC service
-    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
-    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
 
     # Disable serial console
     setprop init.svc.console stopped
