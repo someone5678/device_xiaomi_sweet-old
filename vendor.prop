@@ -108,7 +108,7 @@ camera.disable_zsl_mode=1
 persist.vendor.camera.eis.enable=1
 persist.vendor.camera.facepp.fdenable=0
 persist.vendor.camera.perflock.enable=0
-vendor.camera.aux.packagelist=com.google.android.apps.cameralite
+vendor.camera.aux.packagelist=com.google.android.apps.cameralite,org.pixelexperience.faceunlock
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
