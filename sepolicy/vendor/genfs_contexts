@@ -12,6 +12,9 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel             
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qpnp,qg/power_supply/bms/fastcharge_mode  u:object_r:sysfs_fastcharge_mode:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/usb/fastcharge_mode u:object_r:sysfs_fastcharge_mode:s0
 
+# Touch
+genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate u:object_r:sysfs_touchpanel:s0
+
 # Wakeup Node
 genfscon sysfs /devices/platform/goodix_ts.0/power/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup u:object_r:sysfs_wakeup:s0
