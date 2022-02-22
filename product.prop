@@ -7,9 +7,6 @@ iorapd.readahead.enable=true
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 ro.iorapd.enable=true
 
-# Blur
-ro.surface_flinger.supports_background_blur=1
-
 # Graphics
 debug.cpurend.vsync=false
 
