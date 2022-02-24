@@ -290,8 +290,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power@1.2.vendor \
-    android.hardware.power-service \
-    android.hardware.power-service.rc \
     android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
