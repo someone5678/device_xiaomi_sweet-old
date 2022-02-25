@@ -88,5 +88,5 @@ on property:vendor.post_boot.parsed=1
     write /dev/stune/top-app/schedtune.sched_boost 15
 
     # Report max frequency to unity tasks
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo,libUE4.so"
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo,libUE4.so,libfb.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
