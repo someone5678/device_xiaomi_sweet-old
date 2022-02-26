@@ -19,6 +19,9 @@ $(call inherit-product, device/xiaomi/sweet/configs/device/refreshrate.mk)
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi-firmware/sweet/Android.mk)
+
 # AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
@@ -265,6 +268,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
+    vendor/xiaomi-firmware \
     hardware/google/interfaces \
     hardware/google/pixel
 
