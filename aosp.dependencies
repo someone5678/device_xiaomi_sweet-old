@@ -6,7 +6,7 @@
     "branch": "twelve"
   },
   {
-    "remote": "github",
+    "remote": "gitlab",
     "repository": "someone5678/vendor_xiaomi-firmware",
     "target_path": "vendor/xiaomi-firmware",
     "branch": "twelve"
