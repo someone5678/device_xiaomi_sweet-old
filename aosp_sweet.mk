@@ -14,6 +14,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # Additional Pixel stuffs
 TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_SUPPORTS_APEX_UPDATE := true
 
 PRODUCT_NAME := aosp_sweet
 PRODUCT_DEVICE := sweet
