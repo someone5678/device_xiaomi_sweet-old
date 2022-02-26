@@ -36,6 +36,12 @@
     "branch": "twelve"
   },
   {
+    "remote": "github",
+    "repository": "PixelExperience/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "twelve"
+  },
+  {
     "remote": "pixel-devices-blobs",
     "repository": "vendor_qcom_common",
     "target_path": "vendor/qcom/common",
