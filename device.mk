@@ -156,6 +156,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.sm6150.perf.rc \
+    init.performance_level.rc \
     init.sweet.rc \
     init.target.rc \
     ueventd.qcom.rc
