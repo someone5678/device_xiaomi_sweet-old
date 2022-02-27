@@ -216,7 +216,8 @@ PRODUCT_PACKAGES += \
     SettingsProviderSweetinpro \
     SystemUIOverlaySweet \
     TetheringConfigOverlaySweet \
-    ApplockOverlay
+    ApplockOverlay \
+    CustomWebViewOverlay
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
