@@ -331,9 +331,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
-PRODUCT_PACKAGES += \
-    CutoutRingServiceSweet
-
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
