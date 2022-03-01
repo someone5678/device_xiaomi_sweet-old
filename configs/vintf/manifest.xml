@@ -370,5 +370,10 @@
         <fqname>@1.0::ISensors/default</fqname>
         <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.google.google_battery</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IGoogleBattery/default</fqname>
+    </hal>
     <kernel target-level="5"/>
 </manifest>
