@@ -31,12 +31,6 @@
   },
   {
     "remote": "github",
-    "repository": "someone5678/hardware_qcom-caf_sm8150-common_display",
-    "target_path": "hardware/qcom-caf/sm8150-common/display",
-    "branch": "twelve"
-  },
-  {
-    "remote": "github",
     "repository": "PixelExperience-Devices/device_qcom_common",
     "target_path": "device/qcom/common",
     "branch": "twelve"
