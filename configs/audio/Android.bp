@@ -1,4 +1,10 @@
 prebuilt_etc {
+    name: "audio_effects.conf",
+    src: "audio_effects.conf",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
     name: "a2dp_audio_policy_configuration.xml",
     src: "a2dp_audio_policy_configuration.xml",
     filename_from_src: true,
