@@ -129,7 +129,6 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.sdm.support_writeback=0
-debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
@@ -152,7 +151,6 @@ ro.hardware.fp.sideCap=true
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
 
 # Graphics
-debug.hwui.renderer=skiavk
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
 
