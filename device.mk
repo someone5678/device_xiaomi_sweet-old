@@ -266,6 +266,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     qti_whitelist.xml
 
+# Call recording
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
