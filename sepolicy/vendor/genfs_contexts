@@ -15,7 +15,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.q
 # Wakeup Node
 genfscon sysfs /devices/platform/goodix_ts.0/power/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/a600000.ssusb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-standalone/wakeup u:object_r:sysfs_wakeup:s0
