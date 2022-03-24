@@ -768,4 +768,8 @@
 
     <!-- Whether device supports gaming mode profiles -->
     <bool name="config_gamingmode_performance">true</bool>
+
+    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
+         screenshot chord -->
+    <integer name="config_screenshotChordKeyTimeout">0</integer>
 </resources>
