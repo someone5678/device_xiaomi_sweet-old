@@ -36,5 +36,5 @@
 
     <!-- Location of physical power button -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
-    <dimen name="physical_power_button_center_screen_location_y">1100px</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">@dimen/physical_fingerprint_sensor_center_screen_location_y</dimen>
 </resources>
