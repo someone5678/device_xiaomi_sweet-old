@@ -51,3 +51,9 @@ genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_amrnb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_amrwbplus/wakeup u:object_r:sysfs_wakeup:s0
+
+# Insmod
+genfscon sysfs /kernel/boot_cdsp/boot u:object_r:vendor_sysfs_msm_boot:s0
+genfscon sysfs /kernel/boot_slpi/boot u:object_r:vendor_sysfs_msm_boot:s0
+genfscon sysfs /devices/virtual/npu/msm_npu/boot u:object_r:vendor_sysfs_msm_boot:s0
+genfscon sysfs /devices/virtual/cvp/cvp/boot u:object_r:vendor_sysfs_msm_boot:s0

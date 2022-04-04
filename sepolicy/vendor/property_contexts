@@ -26,3 +26,6 @@ vendor.camera.sensor.u.sensorInfo       u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.d.sensorInfo       u:object_r:vendor_camera_prop:s0
 vendor.camera.boot_complete             u:object_r:vendor_camera_prop:s0
 persist.camera.gyro.disable             u:object_r:vendor_camera_prop:s0
+
+# Insmod
+vendor.all.devices.ready        u:object_r:vendor_device_prop:s0

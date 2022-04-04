@@ -52,3 +52,6 @@
 /sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
+
+# Executable
+/vendor/bin/init\.insmod\.sh                                    u:object_r:init-insmod-sh_exec:s0

@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     ipacm.rc
 
+# Insmod files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc \
@@ -162,6 +166,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
+    init.insmod.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh
 
