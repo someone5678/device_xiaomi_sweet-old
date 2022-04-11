@@ -296,7 +296,6 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power@1.2.vendor \
     android.hardware.power.stats@1.0-service.mock
 
@@ -612,8 +611,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     android.hardware.wifi.hostapd \
     manifest_android.hardware.drm@1.3-service.widevine \
-    vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.servicetracker@1.2-service
+    vendor.qti.gnss@4.0-service
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -680,6 +678,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    perf \
     vibrator \
     wlan
 
