@@ -292,9 +292,6 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
-PRODUCT_PACKAGES += \
     msm_irqbalance.conf
 
 # Power
