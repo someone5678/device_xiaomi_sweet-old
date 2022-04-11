@@ -292,7 +292,14 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    msm_irqbalance.conf
+    commonresourceconfigs.xml \
+    commonsysnodesconfigs.xml \
+    msm_irqbalance.conf \
+    perfboostsconfig.xml \
+    perfconfigstore.xml \
+    powerhint.xml \
+    targetconfig.xml \
+    targetresourceconfigs.xml
 
 # Power
 PRODUCT_PACKAGES += \

@@ -1,6 +1,61 @@
 prebuilt_etc {
+    name: "commonresourceconfigs.xml",
+    sub_dir: "perf",
+    src: "commonresourceconfigs.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "commonsysnodesconfigs.xml",
+    sub_dir: "perf",
+    src: "commonsysnodesconfigs.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
     name: "msm_irqbalance.conf",
     src: "msm_irqbalance.conf",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "perfboostsconfig.xml",
+    sub_dir: "perf",
+    src: "perfboostsconfig.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "perfconfigstore.xml",
+    sub_dir: "perf",
+    src: "perfconfigstore.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "powerhint.xml",
+    src: "powerhint.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "targetconfig.xml",
+    sub_dir: "perf",
+    src: "targetconfig.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "targetresourceconfigs.xml",
+    sub_dir: "perf",
+    src: "targetresourceconfigs.xml",
     filename_from_src: true,
 	soc_specific: true,
 }
