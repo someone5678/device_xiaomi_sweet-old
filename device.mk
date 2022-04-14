@@ -213,7 +213,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     BluetoothOverlaySweet \
-    DocumentsUIOverlaySweet \
     FrameworkResOverlaySweet \
     NotchBarKiller \
     SettingsOverlaySweet \
