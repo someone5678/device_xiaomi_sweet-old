@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.sm6150.perf.rc \
     init.sweet.rc \
-    init.target.rc
+    init.target.rc \
+    ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
@@ -166,8 +167,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+    $(LOCAL_PATH)/rootdir/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh
 
 # Keyhandler
 PRODUCT_PACKAGES += \

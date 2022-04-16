@@ -34,6 +34,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    src: "ueventd.rc",
+    filename_from_src: true,
+    soc_specific: true
+}
+
+prebuilt_etc {
     name: "fstab.zram",
     src: "fstab.zram",
     soc_specific: true
