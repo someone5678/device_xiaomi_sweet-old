@@ -32,6 +32,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.performance_level.rc",
+    src: "init.performance_level.rc",
+    sub_dir: "init",
+    soc_specific: true
+}
+
+prebuilt_etc {
     name: "privapp-permissions-devicesettings.xml",
     sub_dir: "permissions",
     src: "privapp-permissions-devicesettings.xml",
