@@ -674,6 +674,10 @@ $(call inherit-product-if-exists, vendor/dolby/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 include build/make/target/product/iorap_large_memory_config.mk
 
+# Next Genration Asistant
+PRODUCT_PACKAGES += \
+    NgaResources
+
 # QC common
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
