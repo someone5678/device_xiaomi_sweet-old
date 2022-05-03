@@ -275,7 +275,7 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     capabilities NET_BIND_SERVICE
     task_profiles ServiceCapacityLow
 
-service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
+service vendor.irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
