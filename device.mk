@@ -326,11 +326,18 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
+    libdisplayconfig.system \
+    libdisplayconfig.system.qti \
     libminijail \
     libnl \
     libqdMetaData \
+    libqdMetaData.system \
     libwfdaac_vendor \
     vendor.display.config@2.0
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Camera
 PRODUCT_PACKAGES += \
