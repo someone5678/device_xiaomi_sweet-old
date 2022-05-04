@@ -109,8 +109,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys";
-    const char *description = "raven-user 12 SP2A.220405.004 8233519 release-keys";
+    const char *fingerprint = "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys";
+    const char *description = "raven-user 12 SP2A.220505.002 8353555 release-keys";
     const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
     const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
 
