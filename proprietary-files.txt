@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI V13.0.8.0.SKFEUXM
+# Unpinned section - from MIUI V13.0.9.0.SKFEUXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1007,7 +1007,7 @@ vendor/bin/cnss-daemon
 vendor/bin/nv_mac
 
 # Pinned section
-# IMS - from mojito-user-12-SKQ1.210908.001-V13.0.3.0.SKGMIXM-release-keys
+# IMS - from mojito-user-12-SKQ1.210908.001-V13.0.7.0.SKGMIXM-release-keys
 -system_ext/app/ImsRcsService/ImsRcsService.apk|09ecb5757d945b7761ddbf23f1de1ffb2dafde88
 -system_ext/app/uceShimService/uceShimService.apk|29e1853b9055841bf1e543a88586af34918814dc
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|74476767d19fc0f08ba171ecd21b904301f4f1a6
