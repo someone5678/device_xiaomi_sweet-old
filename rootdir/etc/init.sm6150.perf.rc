@@ -21,12 +21,6 @@ on init
     # Disable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 1
 
-on late-fs
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-4
-    start vendor.qti.hardware.display.allocator
-
 on property:vendor.post_boot.parsed=1
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
