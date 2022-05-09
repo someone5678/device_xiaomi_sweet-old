@@ -45,5 +45,6 @@ vendor.mm.enable.qcom_parser=16767487
 
 # WFD
 debug.sf.enable_hwc_vds=1
+media.wfd.max_resolution=7
 persist.debug.wfd.enable=1
 vendor.wfdservice64=enable
