@@ -315,7 +315,5 @@ if echo "$available_governors" | grep schedutil; then
     setprop sys.use_fifo_ui 1
 fi
 
-# Enable PowerHAL hint processing
-setprop vendor.powerhal.init 1
 
-setprop vendor.post_boot.parsed 1
+
