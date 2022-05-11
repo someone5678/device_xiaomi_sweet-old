@@ -619,6 +619,10 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings
 
+# SystemUI
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 $(call inherit-product-if-exists, vendor/dolby/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
