@@ -1041,11 +1041,11 @@ vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 -vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 -vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
 
-# HotwordEnrollment - from raphael RKQ1.200826.002
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|62e301d2f386771facd9a9aa546c0fcc241116da
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|8639661f6fad570723bc6f2759da76604bd804fa
+# HotwordEnrollment - MIUI 13.0.3.0.EU
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|223fbebd3cdb1308a122da715d95f20801c6167e
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|98764f48a8a9b483329baed0b69dde18db3df607
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # Media-C2 - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
