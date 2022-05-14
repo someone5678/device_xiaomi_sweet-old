@@ -31,7 +31,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 12 SP2A.220505.002 8353555 release-keys" \
-    PRODUCT_NAME=raven
+    PRODUCT_NAME=raven \
+    PRODUCT_DEVICE=raven \
+    PRODUCT_BRAND=google \
+    PRODUCT_MODEL="Pixel 6 Pro" \
+    PRODUCT_MANUFACTURER=Google
 
 BUILD_FINGERPRINT := google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys
 
