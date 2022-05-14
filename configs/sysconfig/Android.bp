@@ -11,3 +11,10 @@ prebuilt_etc {
     src: "qti_whitelist.xml",
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "hotword-hiddenapi-package-whitelist.xml",
+    sub_dir: "sysconfig",
+    src: "hotword-hiddenapi-package-whitelist.xml",
+    filename_from_src: true,
+}

@@ -1,0 +1,7 @@
+prebuilt_etc {
+    name: "privapp-permissions-hotword.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+    src: "privapp-permissions-hotword.xml",
+    filename_from_src: true,
+}

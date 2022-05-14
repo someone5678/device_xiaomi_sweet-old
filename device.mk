@@ -687,9 +687,9 @@ $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 include build/make/target/product/iorap_large_memory_config.mk
 
 # HotwordEnrollement
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
-    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+PRODUCT_PACKAGES += \
+    hotword-hiddenapi-package-whitelist.xml \
+    privapp-permissions-hotword.xml
 
 # Next Genration Asistant
 PRODUCT_PACKAGES += \
