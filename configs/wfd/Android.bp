@@ -1,0 +1,13 @@
+prebuilt_etc_xml {
+    name: "wfdconfig.xml",
+    src: "wfdconfig.xml",
+    filename_from_src: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "wfdconfigsink.xml",
+    src: "wfdconfigsink.xml",
+    filename_from_src: true,
+    system_ext_specific: true,
+}
