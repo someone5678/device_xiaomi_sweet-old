@@ -645,6 +645,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NgaResources
 
+# GApps
+PRODUCT_PACKAGES += \
+    Drive \
+    Maps \
+    PrebuiltGmail \
+    TipsPrebuilt
+
+PRODUCT_PACKAGES += \
+    pixel_tips
+
 # Lily Experience
 PRODUCT_PACKAGES += \
     lily_experience.xml
