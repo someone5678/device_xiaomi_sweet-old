@@ -88,7 +88,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.process_sups_ind=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.report_codec=1 \
     persist.vendor.radio.sib16_support=1
 
