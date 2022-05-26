@@ -1,6 +1,12 @@
 [
   {
     "remote": "github",
+    "repository": "PixelExperience/system_qcom",
+    "target_path": "system/qcom",
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
     "repository": "someone5678/vendor_xiaomi_sweet",
     "target_path": "vendor/xiaomi/sweet",
     "branch": "twelve"
