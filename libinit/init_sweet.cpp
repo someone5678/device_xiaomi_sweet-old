@@ -67,11 +67,11 @@ void full_property_override(const std::string &prop, const char value[], const b
 }
 
 static const char *device_prop_key[] =
-        { "brand", "device", "model", "name",
+        { "brand", "device", "model", "cert", "name",
           "marketname", "manufacturer", "mod_device", nullptr };
 
 static const char *device_prop_val[] =
-        { "google", "raven", "Pixel 6 Pro", "raven",
+        { "google", "raven", "Pixel 6 Pro", "raven", "raven",
           "Pixel 6 Pro", "Google", "raven", nullptr };
 
 /* From Magisk@native/jni/magiskhide/hide_utils.c */
