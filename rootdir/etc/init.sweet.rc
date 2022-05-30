@@ -44,11 +44,6 @@ service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     group nfc
     disabled
 
-on property:sys.boot_completed=1
-    # Restrict permissions to socket file 
-    # to hide Magisk & co.
-    chmod 440 /proc/net/unix
-
 service vendor.bluetooth-1-0-qti /vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
     class hal
     user bluetooth
