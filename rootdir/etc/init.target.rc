@@ -134,14 +134,6 @@ on boot
     # Disable serial console
     setprop init.svc.console stopped
 
-
-    # Allow system to manipulate kprofiles modes and parameters
-    chown system system /sys/module/kprofiles/parameters/auto_kprofiles
-    chmod 0660 /sys/module/kprofiles/parameters/auto_kprofiles
-    chown system system /sys/module/kprofiles/parameters/mode
-    chmod 0660 /sys/module/kprofiles/parameters/mode
-
-
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100

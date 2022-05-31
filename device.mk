@@ -221,10 +221,6 @@ PRODUCT_PACKAGES += \
     init.devicesettings.rc \
     privapp-permissions-devicesettings.xml
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Overlays
 PRODUCT_PACKAGES += \
     BluetoothOverlaySweet \
