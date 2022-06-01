@@ -350,11 +350,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CutoutRingServiceSweet
 
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec
-
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
@@ -392,7 +387,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libarbitrarybytes \
     libplatformconfig \
-    libmm-omxcore \
     libOmxCore \
     libc2dcolorconvert \
     libOmxVdec \
