@@ -117,8 +117,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys";
-    const char *description = "raven-user 12 SP2A.220505.002 8353555 release-keys";
+    const char *fingerprint = "google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys";
+    const char *description = "raven-user 12 SQ3A.220605.009.B1 8650216 release-keys";
 
     full_property_override("build.fingerprint", fingerprint, false);
     full_property_override("build.description", description, false);
