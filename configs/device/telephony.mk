@@ -63,6 +63,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     persist.vendor.cne.feature=1 \
     persist.vendor.dpm.feature=11 \
+    persist.vendor.radio.atfwd.start=true \
     ril.subscription.types=NV,RUIM \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=22,20 \
@@ -71,21 +72,16 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.atfwd.start=true \
-    persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.dynamic_sar=1 \
     persist.vendor.radio.force_ltd_sys_ind=1 \
-    persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.manual_nw_rej_ct=1 \
     persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.process_sups_ind=1 \
     persist.vendor.radio.report_codec=1 \
     persist.vendor.radio.ucdetect.usb=true
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
     persist.radio.calls.on.ims=1
-    persist.radio.data_ltd_sys_ind=1 \
     persist.radio.NO_STAPA=1 \
     persist.radio.VT_CAM_INTERFACE=2 \
     persist.radio.VT_ENABLE=1 \
@@ -107,10 +103,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
     persist.vendor.qti.telephony.vt_cam_interface=2
-
-# RCS
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.rcs.supported=1
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
