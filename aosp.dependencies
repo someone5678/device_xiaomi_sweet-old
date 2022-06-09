@@ -25,12 +25,6 @@
   },
   {
     "remote": "github",
-    "repository": "kdrag0n/proton-clang",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
-    "branch": "master"
-  },
-  {
-    "remote": "github",
     "repository": "someone5678/vendor_pixel-additional",
     "target_path": "vendor/pixel-additional",
     "branch": "twelve"
