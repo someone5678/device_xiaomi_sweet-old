@@ -58,7 +58,7 @@ void property_override(char const prop[], char const value[], bool add = true) {
 void full_property_override(const std::string &prop, const char value[], const bool product) {
     const int prop_count = 8;
     const std::vector<std::string> prop_types
-        {"", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.", "vendor_dlkm."};
+        {"", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.", "vendor_dlkm.", "odm_dlkm."};
 
     for (int i = 0; i < prop_count; i++) {
         std::string prop_name = (product ? "ro.product." : "ro.") + prop_types[i] + prop;
