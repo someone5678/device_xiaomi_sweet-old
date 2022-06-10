@@ -126,6 +126,8 @@ void vendor_load_properties() {
             (is_pro ? "M2101K6I" : "M2101K6P"), i);
         full_property_override("device", is_global ? "sweet" : "sweetin", i);
         full_property_override("name", is_global ? "sweet" : "sweetin", i);
+        full_property_override("cert", is_global ? "M2101K6G" :
+            (is_pro ? "M2101K6I" : "M2101K6P"), i);
     }
 
     property_override("ro.product.marketname", marketname.c_str());
