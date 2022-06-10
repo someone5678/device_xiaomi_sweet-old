@@ -109,8 +109,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys";
-    const char *description = "raven-user 12 SQ3A.220605.009.B1 8650216 release-keys";
+    const char *fingerprint = "Redmi/sweet_eea/sweet:12/RKQ1.210614.002/V13.0.9.0.SKFEUXM:user/release-keys";
+    const char *description = "sweet_eea-user 12 RKQ1.210614.002 V13.0.9.0.SKFEUXM release-keys";
     const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
     const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
 
