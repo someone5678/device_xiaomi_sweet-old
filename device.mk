@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
 
-# Iorap
-PRODUCT_PACKAGES += \
-    iorap-app-startup-runner
-
 # IPACM
 PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
