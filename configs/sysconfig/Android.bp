@@ -1,11 +1,4 @@
 prebuilt_etc {
-    name: "adaptivecharging.xml",
-    sub_dir: "sysconfig",
-    src: "adaptivecharging.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "qti_whitelist.xml",
     sub_dir: "sysconfig",
     src: "qti_whitelist.xml",

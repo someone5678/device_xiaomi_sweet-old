@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc
 
-# Adaptive charging
-PRODUCT_PACKAGES += \
-    adaptivecharging.xml
-
 # Authsecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
