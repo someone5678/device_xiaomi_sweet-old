@@ -103,7 +103,7 @@ persist.audio.fluence.voicerec=false
 persist.vendor.audio.hifi=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.voicecall.speaker.stereo=true
-ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.fluencetype=fluence
 ro.vendor.audio.sdk.fluencetype=fluence
 
 # Camera
