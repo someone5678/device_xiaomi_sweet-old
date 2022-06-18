@@ -84,13 +84,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.soundtrigger@2.3-service
 
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc
-
 # Authsecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
@@ -387,14 +380,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libarbitrarybytes \
     libplatformconfig \
-    libOmxCore \
-    libc2dcolorconvert \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor \
     libavservices_minijail_vendor
+
+# OMX
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxCore \
+    libstagefrighthw \
+    libOmxVdec \
+    libOmxVdecHevc \
+    libOmxVenc \
+    libc2dcolorconvert
 
 PRODUCT_PACKAGES += \
     media_codecs.xml \
