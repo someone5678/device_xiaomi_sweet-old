@@ -66,6 +66,14 @@ void full_property_override(const std::string &prop, const char value[], const b
     }
 }
 
+static const char *device_prop_key[] =
+        { "brand", "device", "model", "cert", "name",
+          "marketname", "manufacturer", "mod_device", nullptr };
+
+static const char *device_prop_val[] =
+        { "google", "redfin", "Pixel 5", "Pixel 5", "redfin",
+          "Pixel 5", "Google", "redfin", nullptr };
+
 /* From Magisk@native/jni/magiskhide/hide_utils.c */
 static const char *cts_prop_key[] =
         { "ro.boot.vbmeta.device_state", "ro.boot.verifiedbootstate", "ro.boot.flash.locked",
@@ -109,29 +117,17 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "Redmi/sweet_eea/sweet:12/RKQ1.210614.002/V13.0.9.0.SKFEUXM:user/release-keys";
-    const char *description = "sweet_eea-user 12 RKQ1.210614.002 V13.0.9.0.SKFEUXM release-keys";
-    const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
-    const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
-
-    std::string marketname =
-       !(!is_global && is_pro) ? "Redmi Note 10 Pro" : "Redmi Note 10 Pro Max";
-    const std::string mod_device = is_global ? "sweet_eea_global" : "sweetin_in_global";
+    const char *fingerprint = "google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys";
+    const char *description = "redfin-user 12 SQ3A.220605.009.A1 8643238 release-keys";
 
     full_property_override("build.fingerprint", fingerprint, false);
     full_property_override("build.description", description, false);
 
-    for (int i = 0; i <= 1; i++) {
-        full_property_override("model", is_global ? "M2101K6G" :
-            (is_pro ? "M2101K6I" : "M2101K6P"), i);
-        full_property_override("device", is_global ? "sweet" : "sweetin", i);
-        full_property_override("name", is_global ? "sweet" : "sweetin", i);
-        full_property_override("cert", is_global ? "M2101K6G" :
-            (is_pro ? "M2101K6I" : "M2101K6P"), i);
-    }
-
-    property_override("ro.product.marketname", marketname.c_str());
-    property_override("ro.product.mod_device", mod_device.c_str());
+	for (int i = 0; device_prop_key[i]; ++i) {
+        full_property_override(device_prop_key[i], device_prop_val[i], false);
+        full_property_override(device_prop_key[i], device_prop_val[i], true);
+	}
+    full_property_override("build.product", "redfin", false);
 
     /* Workaround CTS */
     workaround_cts_properties();
