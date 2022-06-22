@@ -105,6 +105,7 @@ on post-fs-data
 
 on boot
     start rmt_storage
+    wait /sys/class/power_supply/battery/temp
     start mi_thermald
 
     # Elliptic
@@ -185,6 +186,7 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
 on charger
+    wait /sys/class/power_supply/battery/temp
     start mi_thermald
 
     setprop sys.usb.controller a600000.dwc3
