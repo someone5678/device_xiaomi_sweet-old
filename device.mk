@@ -491,7 +491,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service \
-    android.hardware.health@2.0-impl-2.1
+    android.hardware.health@2.0-impl-2.1-qti
 
 # ContextHub
 PRODUCT_PACKAGES += \
