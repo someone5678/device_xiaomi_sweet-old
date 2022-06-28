@@ -479,6 +479,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1 \
     libsensorndkbridge
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
