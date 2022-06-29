@@ -1113,11 +1113,13 @@ vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
-# Media-C2 - from LA.UM.9.1.r1-10900-SMxxx0.0
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/lib/libqcodec2.so
-vendor/lib64/libqcodec2.so
+# Media-C2 - from sunfish-user-12-SP2A.220505.002-8353555-release-keys
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|36dd3efd6388c94ac2ec46b081ed793cf43447e7
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
+vendor/lib/libqcodec2.so|98801f9c405ad0527dccb9c2757eb11962390da2
+vendor/lib64/libqcodec2.so|1cf39c3f70fcc088c4f8576a8a4814408a0680fd
+vendor/lib/libmedia_ecoservice.so|0509a658165128f4d4a564a971ecdf29f972172c
+vendor/lib64/libmedia_ecoservice.so|84ace8e8d7aba7c5bc715ad53a7523597aeae062
 
 # Media (libsdedrm) - From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
