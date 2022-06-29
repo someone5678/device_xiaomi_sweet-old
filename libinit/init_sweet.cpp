@@ -71,8 +71,8 @@ static const char *device_prop_key[] =
           "marketname", "manufacturer", "mod_device", nullptr };
 
 static const char *device_prop_val[] =
-        { "google", "redfin", "Pixel 5", "Pixel 5", "redfin",
-          "Pixel 5", "Google", "redfin", nullptr };
+        { "Redmi", "sweet", "M2101K6G", "M2101K6G", "sweet_eea",
+          "Redmi Note 10 Pro", "Xiaomi", "sweet_eea_global", nullptr };
 
 /* From Magisk@native/jni/magiskhide/hide_utils.c */
 static const char *cts_prop_key[] =
@@ -117,8 +117,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys";
-    const char *description = "redfin-user 12 SQ3A.220605.009.A1 8643238 release-keys";
+    const char *fingerprint = "Redmi/sweet_eea/sweet:12/RKQ1.210614.002/V13.0.10.0.SKFEUXM:user/release-keys";
+    const char *description = "sweet_eea-user 12 RKQ1.210614.002 V13.0.10.0.SKFEUXM release-keys";
 
     full_property_override("build.fingerprint", fingerprint, false);
     full_property_override("build.description", description, false);
