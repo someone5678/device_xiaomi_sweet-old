@@ -327,9 +327,6 @@ PRODUCT_PACKAGES += \
     wfdconfig.xml \
     wfdconfigsink.xml
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
@@ -661,7 +658,9 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     perf \
+    telephony \
     vibrator \
+    wfd \
     wlan
 
 $(call inherit-product, device/qcom/common/common.mk)

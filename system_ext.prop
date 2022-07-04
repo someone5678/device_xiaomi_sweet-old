@@ -41,9 +41,7 @@ media.stagefright.enable-http=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
-vendor.mm.enable.qcom_parser=16767487
 
 # WFD
 media.wfd.max_resolution=7
-persist.debug.wfd.enable=1
 vendor.wfdservice64=enable

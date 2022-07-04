@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_FRAMEWORK_MANIFEST_FILE += device/xiaomi/sweet/configs/telephony/framework_manifest.xml
-
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 $(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
 
@@ -23,17 +21,7 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/sweet/configs/telephony/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
 
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    android.system.net.netd@1. \
-    android.system.net.netd@1.1.vendor \
-    android.hardware.radio@1.6 \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.3 \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2 \
-    android.hardware.secure_element@1.2.vendor
+    CellBroadcastReceiver
 
 PRODUCT_PACKAGES += \
     libjson \
@@ -59,15 +47,11 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 PRODUCT_SYSTEM_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
-    persist.radio.multisim.config=dsds \
     persist.vendor.cne.feature=1 \
     persist.vendor.dpm.feature=11 \
     ril.subscription.types=NV,RUIM \
@@ -78,21 +62,15 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
-    persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.dynamic_sar=1 \
-    persist.vendor.radio.enableadvancedscan=true \
     persist.vendor.radio.force_ltd_sys_ind=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.manual_nw_rej_ct=1 \
     persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.radio.process_sups_ind=1 \
-    persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.report_codec=1 \
-    persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.ucdetect.usb=true
 
 # Radio
