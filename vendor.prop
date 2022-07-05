@@ -144,7 +144,7 @@ persist.sys.sf.color_mode=9
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fingerprint Sensor
-ro.hardware.fp.vendor=fpc
+ro.hardware.fingerprint=fpc
 ro.hardware.fp.sideCap=true
 
 # GPU
