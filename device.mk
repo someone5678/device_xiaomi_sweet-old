@@ -663,4 +663,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wfd \
     wlan
 
+TARGET_USE_SM8150_HALS := true
+
 $(call inherit-product, device/qcom/common/common.mk)
