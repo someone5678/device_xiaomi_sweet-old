@@ -33,6 +33,9 @@
      -->
     <bool translatable="false" name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
 
+    <!-- Disable WPA2 to WPA3 auto-upgrade -->
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
+
     <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
     <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
 
