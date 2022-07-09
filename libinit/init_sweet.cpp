@@ -127,7 +127,7 @@ void vendor_load_properties() {
         full_property_override(device_prop_key[i], device_prop_val[i], false);
         full_property_override(device_prop_key[i], device_prop_val[i], true);
 	}
-    full_property_override("build.product", "redfin", false);
+    full_property_override("build.product", "sweet", false);
 
     /* Workaround CTS */
     workaround_cts_properties();
