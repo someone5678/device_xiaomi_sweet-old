@@ -489,6 +489,33 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Display (hwcomposer)
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib/hw/displayfeature.default.so
+vendor/lib/hw/hwcomposer.sm6150.so
+vendor/lib/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib/libsdmcore.so
+vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
+vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
+vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/hwcomposer.sm6150.so
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
 # DPM
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
@@ -1047,9 +1074,6 @@ vendor/lib/libqcodec2.so|98801f9c405ad0527dccb9c2757eb11962390da2
 vendor/lib64/libqcodec2.so|1cf39c3f70fcc088c4f8576a8a4814408a0680fd
 vendor/lib/libmedia_ecoservice.so|0509a658165128f4d4a564a971ecdf29f972172c
 vendor/lib64/libmedia_ecoservice.so|84ace8e8d7aba7c5bc715ad53a7523597aeae062
-
-# Media (libsdedrm) - From NX627J 20201029.204053
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # Soundtrigger - from sunfish-user-12-SQ1A.220105.002-7961164-release-keys
 vendor/lib64/hw/sound_trigger.primary.sm6150.so|18886433c30b32f99dcddb5c6c3bd1a1e03dfb48
