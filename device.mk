@@ -360,9 +360,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
 PRODUCT_PACKAGES += \
-    libsdmcore-shim
-
-PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_PACKAGES += \
