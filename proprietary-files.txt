@@ -71,6 +71,7 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/vndk/libxlog.so
 
 # Audio ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
