@@ -446,7 +446,8 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    Doze
+    Doze \
+    privapp-permissions-doze.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
