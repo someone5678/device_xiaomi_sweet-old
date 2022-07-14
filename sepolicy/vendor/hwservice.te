@@ -1,4 +1,9 @@
 type hal_display_color_hwservice, hwservice_manager_type;
-type hal_displayfeature_xiaomi_hwservice, hwservice_manager_type;
 type hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
 type hal_vpp_hwservice, hwservice_manager_type;
+
+# Display Feature
+type hal_displayfeature_xiaomi_hwservice, hwservice_manager_type;
+
+# Sensor Service
+type vendor_hal_citsensorservice_xiaomi_hwservice, hwservice_manager_type;
