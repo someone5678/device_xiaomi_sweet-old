@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml \
     qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml \
+    qdcm_calib_data_xiaomi_k6_38_0e_0b_fhd_dsc_video_dsi_panel.xml \
     hdr_config.cfg \
     sdr_config.cfg
 
