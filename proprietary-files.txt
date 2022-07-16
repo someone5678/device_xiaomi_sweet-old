@@ -467,6 +467,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
 
 # Display
 vendor/lib64/libdisplayqos.so
+vendor/lib64/libdpps.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
