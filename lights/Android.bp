@@ -13,9 +13,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.sweet",
-    init_rc: ["android.hardware.lights-service.sweet.rc"],
-    vintf_fragments: ["android.hardware.lights-service.sweet.xml"],
+    name: "android.hardware.lights-service.xiaomi_sm6150",
+    init_rc: ["android.hardware.lights-service.xiaomi_sm6150.rc"],
+    vintf_fragments: ["android.hardware.lights.xiaomi_sm6150.xml"],
     relative_install_path: "hw",
     shared_libs: [
         "libbase",
@@ -24,8 +24,8 @@ cc_binary {
         "android.hardware.light-V1-ndk_platform",
     ],
     srcs: [
-        "Light.cpp",
-        "service.cpp",
+        "Lights.cpp",
+        "main.cpp",
     ],
     proprietary: true,
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "Light.h"
+#include "Lights.h"
 
 #include <fstream>
 

@@ -175,7 +175,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.sweet
+    android.hardware.lights-service.xiaomi_sm6150
 
 # NFC
 PRODUCT_PACKAGES += \

@@ -17,7 +17,7 @@
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
-#include "Light.h"
+#include "Lights.h"
 
 using ::aidl::android::hardware::light::Lights;
 
