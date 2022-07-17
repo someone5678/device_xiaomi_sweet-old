@@ -397,10 +397,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
 
 PRODUCT_PACKAGES += \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
-
-PRODUCT_PACKAGES += \
     media_codecs.xml \
     media_codecs_c2.xml \
     media_codecs_omx.xml \
