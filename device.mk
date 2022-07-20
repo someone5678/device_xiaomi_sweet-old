@@ -369,6 +369,9 @@ PRODUCT_PACKAGES += \
     hdr_config.cfg \
     sdr_config.cfg
 
+PRODUCT_PACKAGES += \
+    libsdmcore-shim
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150

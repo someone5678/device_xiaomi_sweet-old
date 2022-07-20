@@ -92,23 +92,8 @@ function blob_fixup() {
     vendor/bin/mi_thermald)
         sed -i 's/%d\/on/%d\/../g' "${2}"
         ;;
-    vendor/lib64/libsdmcore.so)
-        # This patch is valid for libsdmcore @ v13.0.8.0 SKFMIXM
-        LIBSDMCORE_SHASUM="c1fb37069254edeefc008e290490825719d9af4c"
-        echo "Patching libsdmcore"
-
-        xxd -p "${2}" > /tmp/libsdmcore.hex
-
-        sed -i s:2b18621e:1f2003d5:g /tmp/libsdmcore.hex
-        sed -i s:00540a18621e4:00541f2003d54:g /tmp/libsdmcore.hex
-
-        xxd -r -p /tmp/libsdmcore.hex "${2}"
-
-        rm /tmp/libsdmcore.hex
-
-        echo "Done, checking the sha1sum"
-        echo "${LIBSDMCORE_SHASUM} ${2}" | sha1sum -c
-        sleep 2
+    vendor/lib64/hw/hwcomposer.sm6150.so)
+        $PATCHELF_TOOL --add-needed "libsdmcore-shim.so" "${2}"
         ;;
     system_ext/lib64/lib-imsvideocodec.so)
         $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
