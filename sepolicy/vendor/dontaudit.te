@@ -23,3 +23,17 @@ dontaudit untrusted_app_all selinuxfs:file read;
 
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
+
+# Ignore all logging requests
+dontaudit hal_fingerprint storage_file:dir search;
+
+# Ignore harmless QCOM denials
+dontaudit {
+  init
+  priv_app
+} {
+  bt_firmware_file
+  firmware_file
+}:filesystem getattr;
+
+dontaudit priv_app mnt_vendor_file:dir search;
