@@ -1,9 +1,17 @@
-allow vendor_init persist_file:lnk_file read;
-allow vendor_init proc_sched_energy_aware:file w_file_perms;
-set_prop(vendor_init, vendor_power_prop)
-allow vendor_init proc_sched:file write;
-
-set_prop(vendor_init, vendor_camera_prop)
-
 allow vendor_init block_device:lnk_file { setattr };
-allow vendor_init persist_debug_prop:file { read };
+allow vendor_init persist_file:lnk_file read;
+allow vendor_init proc_sched:file write;
+get_prop(vendor_init, persist_debug_prop)
+set_prop(vendor_init, vendor_alarm_boot_prop)
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_power_prop)
+set_prop(vendor_init, vendor_video_prop)
+
+allow vendor_init {
+    proc_sched_energy_aware
+    vendor_debugfs_clk
+    proc_dirty
+    proc
+}:file w_file_perms;
+
+allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };

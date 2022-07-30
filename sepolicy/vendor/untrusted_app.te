@@ -1,1 +1,2 @@
 allow untrusted_app sysfs_kgsl:dir search;
+get_prop(untrusted_app, vendor_persist_camera_prop)

@@ -1,2 +1,8 @@
+# IMEI
+vendor_public_prop(deviceid_prop)
+
 # SettingsLib
 system_public_prop(settingslib_prop)
+
+# Ultrasound
+vendor_public_prop(elliptic_ultrasound_prop)

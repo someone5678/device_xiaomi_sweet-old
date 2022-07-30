@@ -1,8 +1,14 @@
-# Insmod
+# Init
 vendor_internal_prop(vendor_device_prop)
 
 # Power
 vendor_internal_prop(vendor_power_prop)
 
-# Panel color
-vendor_internal_prop(vendor_panel_prop)
+# Displayfeature
+vendor_internal_prop(vendor_displayfeature_prop)
+
+# Fingerprint
+vendor_public_prop(vendor_fp_prop)
+
+# Thermal
+vendor_internal_prop(vendor_thermal_normal_prop)

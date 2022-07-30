@@ -1,3 +1,4 @@
-type ir_device, dev_type;
-
-allow hal_ir_default ir_device:chr_file rw_file_perms;
+allow hal_ir_default lirc_device:{
+  chr_file
+  file
+} rw_file_perms;
