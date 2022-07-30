@@ -127,8 +127,9 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
+debug.hwui.renderer=opengl
+debug.renderengine.backend=threaded
 debug.sdm.support_writeback=0
-renderthread.skia.reduceopstasksplitting=true
 ro.surface_flinger.protected_contents=true
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
