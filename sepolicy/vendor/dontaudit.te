@@ -69,3 +69,8 @@ dontaudit vendor_thermal-engine self:capability dac_override;
 dontaudit vendor_hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file rw_file_perms;
 
 dontaudit vendor_hvdcp kmsg_device:chr_file rw_file_perms;
+
+dontaudit untrusted_app {
+  proc_net
+  proc_version
+}:file rw_file_perms;
