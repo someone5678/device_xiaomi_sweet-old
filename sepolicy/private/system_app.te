@@ -5,3 +5,5 @@ get_prop(system_app, settingslib_prop)
 allow system_app sysfs_vibrator:file { read write open getattr };
 
 hal_client_domain(system_app, hal_mlipay)
+
+get_prop(system_app, qemu_hw_prop)
