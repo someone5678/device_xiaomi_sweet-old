@@ -117,8 +117,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "Redmi/sweet_eea/sweet:12/RKQ1.210614.002/V13.0.10.0.SKFEUXM:user/release-keys";
-    const char *description = "sweet_eea-user 12 RKQ1.210614.002 V13.0.10.0.SKFEUXM release-keys";
+    const char *fingerprint = "Redmi/sweet_global/sweet:12/RKQ1.210614.002/V13.0.12.0.SKFMIXM:user/release-keys";
+    const char *description = "sweet_global-user 12 RKQ1.210614.002 V13.0.12.0.SKFMIXM release-keys";
 
     full_property_override("build.fingerprint", fingerprint, false);
     full_property_override("build.description", description, false);
