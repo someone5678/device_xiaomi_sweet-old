@@ -15,5 +15,6 @@ allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+r_dir_file(system_app, proc_pagetypeinfo)
 
 get_prop(system_app, vendor_persist_camera_prop)
