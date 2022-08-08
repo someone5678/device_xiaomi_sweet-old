@@ -219,6 +219,9 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlaySweet \
     CustomWebViewOverlay
 
+PRODUCT_PACKAGES += \
+    PixelConfigOverlaySweet
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
