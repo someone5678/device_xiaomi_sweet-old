@@ -51,3 +51,7 @@ on boot
     chmod 0660 /sys/kernel/sound_control/mic_gain
     chown system system /sys/kernel/sound_control/speaker_gain
     chmod 0660 /sys/kernel/sound_control/speaker_gain
+
+    # Flashlight Brightness permissions
+    chown system system /sys/class/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
