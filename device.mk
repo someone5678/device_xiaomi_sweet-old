@@ -634,7 +634,6 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-syste
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 $(call inherit-product-if-exists, vendor/dolby/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
-include build/make/target/product/iorap_large_memory_config.mk
 
 # HotwordEnrollement
 PRODUCT_PACKAGES += \
