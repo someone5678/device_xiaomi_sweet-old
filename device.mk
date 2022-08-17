@@ -378,8 +378,7 @@ PRODUCT_PACKAGES += \
     libarbitrarybytes \
     libplatformconfig \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor \
-    libavservices_minijail_vendor
+    libcodec2_hidl@1.0.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
