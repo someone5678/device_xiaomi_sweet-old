@@ -98,6 +98,9 @@ function blob_fixup() {
     system_ext/lib64/lib-imsvideocodec.so)
         $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
         ;;
+    vendor/lib64/camera/components/com.qti.node.watermark.so)
+        $PATCHELF_TOOL --add-needed "libpiex_shim.so" "${2}"
+        ;;
     system_ext/lib/libwfdnative.so | system_ext/lib64/libwfdnative.so )
         "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
