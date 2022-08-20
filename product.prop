@@ -2,6 +2,9 @@
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
+# Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
+
 # GBoard
 ro.com.google.ime.height_ratio=1.2
 
