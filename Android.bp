@@ -15,8 +15,5 @@
 soong_namespace {
     imports: [
         "hardware/qcom-caf/common/fwk-detect",
-        "hardware/xiaomi",
-        "hardware/google/interfaces",
-        "hardware/google/pixel",
     ],
 }
