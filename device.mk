@@ -628,10 +628,6 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings
 
-# QTI Bluetooth
--include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
-$(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
-
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 $(call inherit-product-if-exists, vendor/dolby/config.mk)
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
