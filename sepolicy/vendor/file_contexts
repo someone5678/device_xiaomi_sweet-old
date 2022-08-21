@@ -98,9 +98,6 @@
 # SSR
 /sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
 
-# Touch
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_sm6150                                 u:object_r:hal_lineage_touch_default_exec:s0
-
 # WiFi
 /vendor/bin/nv_mac                                                      u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
