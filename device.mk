@@ -373,10 +373,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsdmcore-shim
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150
-
 # Media
 PRODUCT_PACKAGES += \
     libarbitrarybytes \
