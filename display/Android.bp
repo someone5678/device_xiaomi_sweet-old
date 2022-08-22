@@ -4,12 +4,12 @@ cc_library_shared {
         "display.cpp"
     ],
     include_dirs: [
-        "hardware/qcom-caf/sm8150/display/include",
-        "hardware/qcom-caf/sm8150/display/sdm/include",
-        "hardware/qcom-caf/sm8150/display/sdm/libs/core",
-        "hardware/qcom-caf/sm8150/display/sdm/libs/core/drm",
-        "hardware/qcom-caf/sm8150/display/libdebug",
-        "hardware/qcom-caf/sm8150/display/libdrmutils",
+        "hardware/qcom-caf/sm8150-common/display/include",
+        "hardware/qcom-caf/sm8150-common/display/sdm/include",
+        "hardware/qcom-caf/sm8150-common/display/sdm/libs/core",
+        "hardware/qcom-caf/sm8150-common/display/sdm/libs/core/drm",
+        "hardware/qcom-caf/sm8150-common/display/libdebug",
+        "hardware/qcom-caf/sm8150-common/display/libdrmutils",
         "vendor/qcom/opensource/commonsys-intf/display/include",
     ],
     shared_libs: [
