@@ -71,6 +71,7 @@ TARGET_KERNEL_CONFIG := sweet_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.14
+KERNEL_LD := LD=ld.lld
 
 # Allow LZ4 compression
 BOARD_RAMDISK_USE_LZ4 := true
