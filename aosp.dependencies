@@ -3,48 +3,48 @@
     "remote": "github",
     "repository": "PixelExperience/system_qcom",
     "target_path": "system/qcom",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "github",
     "repository": "someone5678/vendor_xiaomi_sweet",
     "target_path": "vendor/xiaomi/sweet",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "gitlab",
     "repository": "someone5678/vendor_xiaomi-firmware",
     "target_path": "vendor/xiaomi-firmware",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "github",
     "repository": "someone5678/kernel_xiaomi_sweet",
     "target_path": "kernel/xiaomi/sweet",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "github",
     "repository": "someone5678/vendor_pixel-additional",
     "target_path": "vendor/pixel-additional",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "github",
     "repository": "PixelExperience-Devices/device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "github",
     "repository": "PixelExperience/hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "remote": "pixel-devices-blobs",
     "repository": "vendor_qcom_common",
     "target_path": "vendor/qcom/common",
-    "branch": "twelve"
+    "branch": "thirteen"
   }
 ]
