@@ -1170,6 +1170,41 @@
             <instance>AtCmdFwdService</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.allocator</name>
+        <interface>
+            <name>IAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.composer3</name>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.net.nlinterceptor</name>
+        <interface>
+            <name>IInterceptor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.power.stats</name>
+        <interface>
+            <name>IPowerStats</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.health</name>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <avb>
         <vbmeta-version>1.0</vbmeta-version>
     </avb>
