@@ -177,7 +177,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_sm6150
+    android.hardware.light-service.xiaomi
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -276,6 +276,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/xiaomi \
     hardware/qcom-caf/wlan \
     vendor/qcom/opensource/data-ipa-cfg-mgr \
     vendor/xiaomi-firmware
