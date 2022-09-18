@@ -82,11 +82,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.radio.calls.on.ims=1
-    persist.radio.NO_STAPA=1 \
-    persist.radio.VT_CAM_INTERFACE=2 \
+    persist.vendor.cne.feature=1 \
+    persist.vendor.data.iwlan.enable=true \
+    persist.radio.RATE_ADAPT_ENABLE=1 \
+    persist.radio.ROTATION_ENABLE=1 \
+    persist.radio.VT_CAM_INTERFACE=2
     persist.radio.VT_ENABLE=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
+    persist.radio.NO_STAPA=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.radio.videopause.mode=1 \
+    persist.rcs.supported=1 \
+    persist.radio.calls.on.ims=1
 
 # RIL Powersaving
 PRODUCT_VENDOR_PROPERTIES += \
@@ -96,6 +103,15 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.ril.fast.dormancy.rule=1 \
     ro.ril.fast.dormancy.timeout=3 \
     ro.mot.eri.losalert.delay=1000
+
+# RILD Path
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+
+# Disable snapshot timer
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.snapshot_enabled=0 \
+    persist.vendor.radio.snapshot_timer=0
 
 # IMS
 PRODUCT_VENDOR_PROPERTIES += \
