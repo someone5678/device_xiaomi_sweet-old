@@ -1,8 +1,5 @@
 # ART
 dalvik.vm.dex2oat64.enabled=true
-ro.vendor.qti.am.reschedule_service=true
-ro.dex2oat_white_list=com.google.android.gms
-ro.sys.fw.dex2oat_thread_count=4
 dalvik.vm.boot-dex2oat-cpu-set=0,1,6,7
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=4
@@ -98,12 +95,9 @@ vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
 persist.vendor.audio.hifi=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.voicecall.speaker.stereo=true
-ro.qc.sdk.audio.fluencetype=fluence
 ro.vendor.audio.sdk.fluencetype=fluence
 
 # Camera
@@ -143,20 +137,14 @@ persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
 
 # Fling
-ro.min.fling_velocity=160 
-ro.max.fling_velocity=20000
-ro.max.fling_velocity=20000 
-ro.vendor.qti.cgroup_follow.enable=true 
 persist.vendor.qti.inputopts.enable=true 
 persist.vendor.qti.inputopts.movetouchslop=0.6 
-ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fingerprint Sensor
 ro.hardware.fingerprint=fpc
-ro.hardware.fp.sideCap=true
 
 # FM
 vendor.hw.fm.init=0
@@ -187,23 +175,8 @@ suspend.short_suspend_threshold_millis=2000
 suspend.short_suspend_backoff_enabled=true
 suspend.max_sleep_time_millis=40000
 
-# Legit Touch Hax 
-touch.size.scale=1
-touch.size.bias=0
-touch.size.isSummed=0
-touch.pressure.scale=0.001
-touch.distance.calibration=none
-touch.distance.scale=0
-touch.coverage.calibration=box
-touch.gestureMode=spots
-MultitouchSettleInterval=1ms 
-MultitouchMinDistance=1px
-TapInterval=1ms
-TapSlop=1px
-
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.media.recorder-max-base-layer-fps=60
 
 # Media Codec2
 audio.offload.video=true
@@ -228,9 +201,6 @@ ro.vendor.qspm.enable=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
-
-# Shutdown timeout tuning
-ro.build.shutdown_timeout=2
 
 # Soc
 ro.soc.model=SM7150

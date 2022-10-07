@@ -1,3 +1,13 @@
+# ART
+ro.vendor.qti.am.reschedule_service=true
+ro.dex2oat_white_list=com.google.android.gms
+ro.sys.fw.dex2oat_thread_count=4
+
+# Audio
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=fluence
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.profile.a2dp.source.enabled=true
@@ -56,6 +66,29 @@ ro.bluetooth.emb_wp_mode=false
 # CNE
 persist.vendor.cne.feature=1
 
+# Fingerprint Sensor
+ro.hardware.fp.sideCap=true
+
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+ro.vendor.qti.cgroup_follow.enable=true
+
+# Legit Touch Hax 
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms 
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-qcp=true
@@ -64,6 +97,10 @@ media.stagefright.enable-http=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
+ro.media.recorder-max-base-layer-fps=60
+
+# Shutdown timeout tuning
+ro.build.shutdown_timeout=2
 
 # WFD
 media.wfd.max_resolution=7
