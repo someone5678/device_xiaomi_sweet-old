@@ -13,6 +13,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "qdcm_calib_data_xiaomi_k6_38_0e_0b_fhd_dsc_video_dsi_panel.xml",
+    src: "qdcm_calib_data_xiaomi_k6_38_0e_0b_fhd_dsc_video_dsi_panel.xml",
+    filename_from_src: true,
+	soc_specific: true,
+}
+
+prebuilt_etc {
     name: "hdr_config.cfg",
     src: "hdr_config.cfg",
     filename_from_src: true,
