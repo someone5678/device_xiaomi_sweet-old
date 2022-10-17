@@ -603,7 +603,8 @@ PRODUCT_PACKAGES += \
     libgui_shim \
     android.hidl.base@1.0 \
     android.hidl.base@1.0_system \
-    android.hidl.base@1.0.vendor
+    android.hidl.base@1.0.vendor \
+    libavservices_minijail_vendor
 
 # Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
 # on supported devices with Deep Press input classifier HALs and models
