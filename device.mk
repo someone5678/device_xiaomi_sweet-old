@@ -598,9 +598,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
-# Shims
+# Lineage Compat
 PRODUCT_PACKAGES += \
-    libgui-shim
+    libgui_shim
 
 # Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
 # on supported devices with Deep Press input classifier HALs and models

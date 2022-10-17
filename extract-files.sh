@@ -96,7 +96,7 @@ function blob_fixup() {
         $PATCHELF_TOOL --add-needed "libsdmcore-shim.so" "${2}"
         ;;
     system_ext/lib64/lib-imsvideocodec.so)
-        $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
+        $PATCHELF_TOOL --add-needed "libgui_shim.so" "${2}"
         ;;
     vendor/lib64/camera/components/com.qti.node.watermark.so)
         $PATCHELF_TOOL --add-needed "libpiex_shim.so" "${2}"
