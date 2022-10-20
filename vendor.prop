@@ -199,9 +199,6 @@ ro.vendor.perf-hal.ver=2.2
 # QSPM
 ro.vendor.qspm.enable=true
 
-# Seamless transfer
-sys.fflag.override.settings_seamless_transfer=true
-
 # Soc
 ro.soc.model=SM7150
 ro.soc.manufacturer=QTI
