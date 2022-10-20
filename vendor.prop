@@ -199,6 +199,9 @@ ro.vendor.perf-hal.ver=2.2
 # QSPM
 ro.vendor.qspm.enable=true
 
+# App Locale Opt In
+sys.fflag.override.settings_app_locale_opt_in_enabled=false
+
 # Soc
 ro.soc.model=SM7150
 ro.soc.manufacturer=QTI
