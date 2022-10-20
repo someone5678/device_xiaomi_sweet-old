@@ -5,7 +5,7 @@
 #
 
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
-$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um/ipacm_vendor_product.mk)
 
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \

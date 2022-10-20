@@ -279,7 +279,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
     hardware/qcom-caf/wlan \
-    vendor/qcom/opensource/data-ipa-cfg-mgr \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um \
     vendor/xiaomi-firmware
 
 # ANT+
