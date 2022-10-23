@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI V13.0.13.0.SKFEUXM
+# Unpinned section - from MIUI V13.0.15.0.SKFEUXM
 
 # ADSP
 vendor/bin/adsprpcd
